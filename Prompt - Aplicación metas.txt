@@ -1,0 +1,42 @@
+Estoy desarrollando una aplicación de escritorio en Python para Windows que permite gestionar metas personales con unidades personalizadas. 
+Quiero que me guíes paso a paso para implementarla usando PyQt5. A continuación te detallo los requisitos funcionales y de interfaz:
+
+## 🎯 OBJETIVO GENERAL
+Una app que me permita crear metas (como leer libros), definir unidades (páginas, minutos, etc.), frecuencia e intervalo, y registrar mi avance. 
+La app debe mostrar el progreso y generar reportes visuales.
+
+## 🧩 FUNCIONES CLAVE
+- Crear metas con: nombre, emoji, unidad personalizada, intervalo (diario/semanal/mensual/personalizado), cantidad por intervalo, fecha de inicio, 
+fecha final o cantidad total.
+- Registro de progreso directamente desde la pantalla principal (botón `+` con input).
+- Cálculo automático del avance, con barra de progreso.
+- Vista detallada de cada meta con posibilidad de editar campos clave y ver vista previa del nuevo plan.
+- Auto-finalización de metas al llegar al 100%.
+- Validaciones de datos (fechas, números, campos vacíos).
+- Copia de seguridad automática al editar campos sensibles.
+- Opción para reconvertir registros al cambiar unidades.
+- Historial por fechas con opción de eliminar registros y exportar.
+- Panel superior con lo que “debería hacerse hoy” en cada meta.
+- Posibilidad de pausar metas sin perder datos.
+- Módulo de reportes visuales con filtros por fecha, metas y frecuencia de agregación.
+- Perfil de usuario con configuración básica: idioma, tema, ruta de backup.
+
+## 🎨 INTERFAZ
+- Uso de PyQt5 con estilo visual limpio y espacioso.
+- Metas mostradas como bloques con emoji, nombre, barra de progreso y botón `+`.
+- Navegación por ventanas: Dashboard, Crear Meta, Detalle, Reportes, Historial.
+- Confirmaciones visuales para acciones sensibles.
+- Input numérico con confirmación o deshacer para registros.
+
+## 🗂 ESTRUCTURA TÉCNICA
+- GUI: PyQt5
+- Almacenamiento: Archivos JSON por meta
+- Gráficos: matplotlib embebido
+- Backups: JSON en carpeta /backups/
+
+Comencemos paso a paso. Primero, quiero que me ayudes a:
+1. Definir la estructura básica de carpetas y archivos.
+2. Crear la interfaz base de la ventana principal con PyQt5 (solo el layout, sin lógica).
+3. Ir módulo por módulo implementando funciones.
+
+Actuá como un desarrollador experto en Python y PyQt5. Hacelo claro, escalable y mantenible.

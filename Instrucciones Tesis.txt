@@ -1,0 +1,20 @@
+1)
+Para cada sujeto, sumar los valores indiviudales de CO de items especificos, formando nuevo índice.
+Separacion de tipo de item.
+
+Indices nuevos (4, los mismos de antes, pero sumando).
+- De todos.
+- Significativos.
+
+Graficar índices con boxplots o barras o violín.
+
+Calcular diferencias significativas y Word.
+
+Excel.
+
+2)
+Modelos.
+
+3)
+Tiempos.
+
