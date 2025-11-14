@@ -2,465 +2,1177 @@
 METADATOS DEL PIPELINE DE PREPROCESAMIENTO
 ============================================================
 
-Fecha de ejecución: 2025-11-10 18:16:26.539867
+Fecha de ejecución: 2025-11-11 22:02:33.659599
 
 
 Generales:
-  Casos: 2839
-  Columnas: 228
-  Memoria: 22.9 MB
+  Casos: 2786
+  Columnas: 601
+  Memoria: 22.3 MB
 
   Columnas incluidas:
-    1. id
-    2. window_resolution_ini
-    3. fase_1.caracterizacion_personal.genero
-    4. fase_1.caracterizacion_personal.edad
-    5. fase_1.caracterizacion_personal.nacionalidad
-    6. fase_1.caracterizacion_personal.provincia
-    7. fase_1.caracterizacion_personal.e_social
-    8. fase_1.caracterizacion_personal.niv_educativo
-    9. fase_1.caracterizacion_personal.f_ingreso
-    10. fase_1.caracterizacion_personal.inmueble_res
-    11. fase_1.caracterizacion_politica.voto_2019
-    12. fase_1.caracterizacion_politica.voto_PASO_2023
-    13. fase_1.caracterizacion_politica.candidato_PASO_2023
-    14. fase_1.caracterizacion_politica.votara_2023
-    15. fase_1.caracterizacion_politica.afiliacion_pol
-    16. fase_1.caracterizacion_politica.autopercepcion_0
-    17. fase_1.caracterizacion_politica.autopercepcion_1
-    18. fase_1.caracterizacion_politica.autopercepcion_2
-    19. fase_1.caracterizacion_politica.cercania_Sergio_MassaSergio Massa
-    20. fase_1.caracterizacion_politica.cercania_Patricia_BullrichPatricia Bullrich
-    21. fase_1.caracterizacion_politica.cercania_Myriam_BregmanMyriam Bregman
-    22. fase_1.caracterizacion_politica.cercania_Javier_MileiJavier Milei
-    23. fase_1.caracterizacion_politica.cercania_Juan_SchiarettiJuan Schiaretti
-    24. fase_1.caracterizacion_medios_comunicacion.medios_informacion
-    25. fase_1.caracterizacion_medios_comunicacion.red_social
-    26. fase_1.caracterizacion_medios_comunicacion.influencia_redes_0
-    27. fase_1.caracterizacion_medios_comunicacion.medios_prensa
-    28. fase_1.caracterizacion_medios_comunicacion.influencia_prensa_0
-    29. fase_2.caracterizacion_electoral.ece_item_1
-    30. fase_2.caracterizacion_electoral.ece_item_2
-    31. fase_2.caracterizacion_electoral.ece_item_3
-    32. fase_2.caracterizacion_electoral.ece_item_4
-    33. fase_2.caracterizacion_electoral.ece_item_5
-    34. fase_2.caracterizacion_electoral.ece_item_6
-    35. fase_2.caracterizacion_electoral.ece_item_7
-    36. fase_2.caracterizacion_candidatos.Sergio Massa.cdc_0
-    37. fase_2.caracterizacion_candidatos.Sergio Massa.cdc_1
-    38. fase_2.caracterizacion_candidatos.Sergio Massa.time
-    39. fase_2.caracterizacion_candidatos.Patricia Bullrich.cdc_0
-    40. fase_2.caracterizacion_candidatos.Patricia Bullrich.cdc_1
-    41. fase_2.caracterizacion_candidatos.Patricia Bullrich.time
-    42. fase_2.caracterizacion_candidatos.Juan Schiaretti.cdc_0
-    43. fase_2.caracterizacion_candidatos.Juan Schiaretti.cdc_1
-    44. fase_2.caracterizacion_candidatos.Juan Schiaretti.time
-    45. fase_2.caracterizacion_candidatos.Javier Milei.cdc_0
-    46. fase_2.caracterizacion_candidatos.Javier Milei.cdc_1
-    47. fase_2.caracterizacion_candidatos.Javier Milei.time
-    48. fase_2.caracterizacion_candidatos.Myriam Bregman.cdc_0
-    49. fase_2.caracterizacion_candidatos.Myriam Bregman.cdc_1
-    50. fase_2.caracterizacion_candidatos.Myriam Bregman.time
-    51. fase_3.IP.IP_item_7.IP_respuesta
-    52. fase_3.IP.IP_item_7.time
-    53. fase_3.IP.IP_item_10.IP_respuesta
-    54. fase_3.IP.IP_item_10.time
-    55. fase_3.IP.IP_item_27.IP_respuesta
-    56. fase_3.IP.IP_item_27.time
-    57. fase_3.IP.IP_item_25.IP_respuesta
-    58. fase_3.IP.IP_item_25.time
-    59. fase_3.IP.IP_item_24.IP_respuesta
-    60. fase_3.IP.IP_item_24.time
-    61. fase_3.IP.IP_item_29.IP_respuesta
-    62. fase_3.IP.IP_item_29.time
-    63. fase_3.IP.IP_item_28.IP_respuesta
-    64. fase_3.IP.IP_item_28.time
-    65. fase_3.IP.IP_item_30.IP_respuesta
-    66. fase_3.IP.IP_item_30.time
-    67. fase_3.IP.IP_item_19.IP_respuesta
-    68. fase_3.IP.IP_item_19.time
-    69. fase_3.IP.IP_item_8.IP_respuesta
-    70. fase_3.IP.IP_item_8.time
-    71. fase_3.IP.IP_item_22.IP_respuesta
-    72. fase_3.IP.IP_item_22.time
-    73. fase_3.IP.IP_item_11.IP_respuesta
-    74. fase_3.IP.IP_item_11.time
-    75. fase_3.IP.IP_item_20.IP_respuesta
-    76. fase_3.IP.IP_item_20.time
-    77. fase_3.IP.IP_item_3.IP_respuesta
-    78. fase_3.IP.IP_item_3.time
-    79. fase_3.IP.IP_item_4.IP_respuesta
-    80. fase_3.IP.IP_item_4.time
-    81. fase_3.IP.IP_item_6.IP_respuesta
-    82. fase_3.IP.IP_item_6.time
-    83. fase_3.IP.IP_item_9.IP_respuesta
-    84. fase_3.IP.IP_item_9.time
-    85. fase_3.IP.IP_item_5.IP_respuesta
-    86. fase_3.IP.IP_item_5.time
-    87. fase_3.IP.IP_item_16.IP_respuesta
-    88. fase_3.IP.IP_item_16.time
-    89. fase_3.IP_modificada.IP_item_16_Izq.candidato
-    90. fase_3.IP_modificada.IP_item_16_Izq.IP_respuesta
-    91. fase_3.IP_modificada.IP_item_16_Izq.tiempo
-    92. fase_3.IP_modificada.IP_item_27_Der.candidato
-    93. fase_3.IP_modificada.IP_item_27_Der.IP_respuesta
-    94. fase_3.IP_modificada.IP_item_27_Der.tiempo
-    95. fase_3.IP_modificada.IP_item_10_Izq.candidato
-    96. fase_3.IP_modificada.IP_item_10_Izq.IP_respuesta
-    97. fase_3.IP_modificada.IP_item_10_Izq.tiempo
-    98. fase_3.IP_modificada.IP_item_22_Izq.candidato
-    99. fase_3.IP_modificada.IP_item_22_Izq.IP_respuesta
-    100. fase_3.IP_modificada.IP_item_22_Izq.tiempo
-    101. fase_3.IP_modificada.IP_item_24_Izq.candidato
-    102. fase_3.IP_modificada.IP_item_24_Izq.IP_respuesta
-    103. fase_3.IP_modificada.IP_item_24_Izq.tiempo
-    104. fase_3.IP_modificada.IP_item_28_Izq.candidato
-    105. fase_3.IP_modificada.IP_item_28_Izq.IP_respuesta
-    106. fase_3.IP_modificada.IP_item_28_Izq.tiempo
-    107. fase_3.IP_modificada.IP_item_25_Der.candidato
-    108. fase_3.IP_modificada.IP_item_25_Der.IP_respuesta
-    109. fase_3.IP_modificada.IP_item_25_Der.tiempo
-    110. fase_3.IP_modificada.IP_item_24_Der.candidato
-    111. fase_3.IP_modificada.IP_item_24_Der.IP_respuesta
-    112. fase_3.IP_modificada.IP_item_24_Der.tiempo
-    113. fase_3.IP_modificada.IP_item_27_Izq.candidato
-    114. fase_3.IP_modificada.IP_item_27_Izq.IP_respuesta
-    115. fase_3.IP_modificada.IP_item_27_Izq.tiempo
-    116. fase_3.IP_modificada.IP_item_10_Der.candidato
-    117. fase_3.IP_modificada.IP_item_10_Der.IP_respuesta
-    118. fase_3.IP_modificada.IP_item_10_Der.tiempo
-    119. fase_3.IP_modificada.IP_item_11_Izq.candidato
-    120. fase_3.IP_modificada.IP_item_11_Izq.IP_respuesta
-    121. fase_3.IP_modificada.IP_item_11_Izq.tiempo
-    122. fase_3.IP_modificada.IP_item_6_Der.candidato
-    123. fase_3.IP_modificada.IP_item_6_Der.IP_respuesta
-    124. fase_3.IP_modificada.IP_item_6_Der.tiempo
-    125. fase_3.IP_modificada.IP_item_11_Der.candidato
-    126. fase_3.IP_modificada.IP_item_11_Der.IP_respuesta
-    127. fase_3.IP_modificada.IP_item_11_Der.tiempo
-    128. fase_3.IP_modificada.IP_item_6_Izq.candidato
-    129. fase_3.IP_modificada.IP_item_6_Izq.IP_respuesta
-    130. fase_3.IP_modificada.IP_item_6_Izq.tiempo
-    131. fase_3.IP_modificada.IP_item_3_Izq.candidato
-    132. fase_3.IP_modificada.IP_item_3_Izq.IP_respuesta
-    133. fase_3.IP_modificada.IP_item_3_Izq.tiempo
-    134. fase_3.IP_modificada.IP_item_16_Der.candidato
-    135. fase_3.IP_modificada.IP_item_16_Der.IP_respuesta
-    136. fase_3.IP_modificada.IP_item_16_Der.tiempo
-    137. fase_3.IP_modificada.IP_item_3_Der.candidato
-    138. fase_3.IP_modificada.IP_item_3_Der.IP_respuesta
-    139. fase_3.IP_modificada.IP_item_3_Der.tiempo
-    140. fase_3.IP_modificada.IP_item_22_Der.candidato
-    141. fase_3.IP_modificada.IP_item_22_Der.IP_respuesta
-    142. fase_3.IP_modificada.IP_item_22_Der.tiempo
-    143. fase_3.IP_modificada.IP_item_28_Der.candidato
-    144. fase_3.IP_modificada.IP_item_28_Der.IP_respuesta
-    145. fase_3.IP_modificada.IP_item_28_Der.tiempo
-    146. fase_3.IP_modificada.IP_item_25_Izq.candidato
-    147. fase_4.sentimiento_fase_final
-    148. fase_4.evento_estresante
-    149. fase_4.sabia_del_experimento
-    150. fase_4.usa_sustancias
-    151. fase_4.tabaco
-    152. fase_4.tomaste_drogas_recreativas
-    153. fase_4.alcohol
-    154. fase_4.marihuana
-    155. fase_4.medicamentos
-    156. fase_4.cual_medicamento
-    157. fase_4.otras_sustancias
-    158. fase_4.cual_droga_recreativa
-    159. fase_4.horas_sueño_promedio
-    160. fase_4.sueño_noche_anterior
-    161. window_resolution_end
-    162. c
-    163. fase_3.IP.IP_item_23.IP_respuesta
-    164. fase_3.IP.IP_item_23.time
-    165. fase_3.IP_modificada.IP_item_5_Der.candidato
-    166. fase_3.IP_modificada.IP_item_5_Der.IP_respuesta
-    167. fase_3.IP_modificada.IP_item_5_Der.tiempo
-    168. fase_3.IP_modificada.IP_item_29_Der.candidato
-    169. fase_3.IP_modificada.IP_item_29_Der.IP_respuesta
-    170. fase_3.IP_modificada.IP_item_29_Der.tiempo
-    171. fase_3.IP_modificada.IP_item_23_Der.candidato
-    172. fase_3.IP_modificada.IP_item_23_Der.IP_respuesta
-    173. fase_3.IP_modificada.IP_item_23_Der.tiempo
-    174. fase_3.IP_modificada.IP_item_30_Der.candidato
-    175. fase_3.IP_modificada.IP_item_30_Der.IP_respuesta
-    176. fase_3.IP_modificada.IP_item_30_Der.tiempo
-    177. fase_3.IP_modificada.IP_item_23_Izq.candidato
-    178. fase_3.IP_modificada.IP_item_23_Izq.IP_respuesta
-    179. fase_3.IP_modificada.IP_item_23_Izq.tiempo
-    180. fase_3.IP_modificada.IP_item_30_Izq.candidato
-    181. fase_3.IP_modificada.IP_item_30_Izq.IP_respuesta
-    182. fase_3.IP_modificada.IP_item_30_Izq.tiempo
-    183. fase_3.IP_modificada.IP_item_19_Der.candidato
-    184. fase_3.IP_modificada.IP_item_19_Der.IP_respuesta
-    185. fase_3.IP_modificada.IP_item_19_Der.tiempo
-    186. fase_3.IP_modificada.IP_item_25_Izq.IP_respuesta
-    187. fase_3.IP_modificada.IP_item_25_Izq.tiempo
-    188. fase_3.IP_modificada.IP_item_8_Der.candidato
-    189. fase_3.IP_modificada.IP_item_8_Der.IP_respuesta
-    190. fase_3.IP_modificada.IP_item_8_Der.tiempo
-    191. fase_3.IP_modificada.IP_item_29_Izq.candidato
-    192. fase_3.IP_modificada.IP_item_29_Izq.IP_respuesta
-    193. fase_3.IP_modificada.IP_item_29_Izq.tiempo
-    194. fase_3.IP_modificada.IP_item_5_Izq.candidato
-    195. fase_3.IP_modificada.IP_item_5_Izq.IP_respuesta
-    196. fase_3.IP_modificada.IP_item_5_Izq.tiempo
-    197. fase_3.IP_modificada.IP_item_19_Izq.candidato
-    198. fase_3.IP_modificada.IP_item_19_Izq.IP_respuesta
-    199. fase_3.IP_modificada.IP_item_19_Izq.tiempo
-    200. fase_3.IP_modificada.IP_item_8_Izq.candidato
-    201. fase_3.IP_modificada.IP_item_8_Izq.IP_respuesta
-    202. fase_3.IP_modificada.IP_item_8_Izq.tiempo
-    203. fase_3.IP_modificada.IP_item_4_Der.candidato
-    204. fase_3.IP_modificada.IP_item_4_Der.IP_respuesta
-    205. fase_3.IP_modificada.IP_item_4_Der.tiempo
-    206. fase_3.IP_modificada.IP_item_4_Izq.candidato
-    207. fase_3.IP_modificada.IP_item_4_Izq.IP_respuesta
-    208. fase_3.IP_modificada.IP_item_4_Izq.tiempo
-    209. fase_3.IP_modificada.IP_item_9_Izq.candidato
-    210. fase_3.IP_modificada.IP_item_9_Izq.IP_respuesta
-    211. fase_3.IP_modificada.IP_item_9_Izq.tiempo
-    212. fase_3.IP_modificada.IP_item_20_Der.candidato
-    213. fase_3.IP_modificada.IP_item_20_Der.IP_respuesta
-    214. fase_3.IP_modificada.IP_item_20_Der.tiempo
-    215. fase_3.IP_modificada.IP_item_9_Der.candidato
-    216. fase_3.IP_modificada.IP_item_9_Der.IP_respuesta
-    217. fase_3.IP_modificada.IP_item_9_Der.tiempo
-    218. fase_3.IP_modificada.IP_item_20_Izq.candidato
-    219. fase_3.IP_modificada.IP_item_20_Izq.IP_respuesta
-    220. fase_3.IP_modificada.IP_item_20_Izq.tiempo
-    221. fase_3.IP_modificada.IP_item_7_Der.candidato
-    222. fase_3.IP_modificada.IP_item_7_Der.IP_respuesta
-    223. fase_3.IP_modificada.IP_item_7_Der.tiempo
-    224. fase_3.IP_modificada.IP_item_7_Izq.candidato
-    225. fase_3.IP_modificada.IP_item_7_Izq.IP_respuesta
-    226. fase_3.IP_modificada.IP_item_7_Izq.tiempo
-    227. CO_Congruentes_Promedio
-    228. CO_Incongruentes_Promedio
+    1. ID
+    2. Edad
+    3. Edad_Agrupada
+    4. Genero
+    5. Estrato_Social
+    6. Nivel_Educativo
+    7. Fuente_Ingreso
+    8. Inmueble_Residencia
+    9. Provincia
+    10. Region
+    11. Region_BsAs
+    12. Region_CABA
+    13. Region_Centro
+    14. Region_Cuyo
+    15. Region_Norte
+    16. Region_Patagonia
+    17. Nacionalidad
+    18. Voto_2019
+    19. Voto_PASO_2023
+    20. Candidato_PASO_2023
+    21. Categoria_PASO_2023
+    22. Categoria_PASO_2023_Blank
+    23. Categoria_PASO_2023_Centre
+    24. Categoria_PASO_2023_Left_Wing
+    25. Categoria_PASO_2023_Moderate_Right_A
+    26. Categoria_PASO_2023_Moderate_Right_B
+    27. Categoria_PASO_2023_Progressivism
+    28. Categoria_PASO_2023_Right_Wing_Libertarian
+    29. Votara_2023
+    30. Afiliacion_Politica
+    31. Autopercepcion_Izq_Der
+    32. Autopercepcion_Izq_Der_Agrupada
+    33. Autopercepcion_Izq_Der_Agrupada_A
+    34. Autopercepcion_Izq_Der_Agrupada_B
+    35. Autopercepcion_Izq_Der_Agrupada_C
+    36. Autopercepcion_Con_Pro
+    37. Autopercepcion_Per_Antiper
+    38. Cercania_Massa
+    39. Cercania_Bullrich
+    40. Cercania_Bregman
+    41. Cercania_Milei
+    42. Cercania_Schiaretti
+    43. Influencia_Redes
+    44. Red_Social
+    45. Red_Social_Twitter
+    46. Red_Social_Facebook
+    47. Red_Social_Instagram
+    48. Red_Social_Threads
+    49. Red_Social_Tiktok
+    50. Red_Social_Youtube
+    51. Red_Social_Whatsapp
+    52. Red_Social_Telegram
+    53. Influencia_Prensa
+    54. Medios_Informacion
+    55. Medios_Prensa
+    56. Medios_Prensa_Ambito_Financiero
+    57. Medios_Prensa_Prensa_Obrera
+    58. Medios_Prensa_Diario_Universal
+    59. Medios_Prensa_Popular
+    60. Medios_Prensa_Izquierda_Diario
+    61. Medios_Prensa_Clarin
+    62. Medios_Prensa_Perfil
+    63. Medios_Prensa_Pagina_12
+    64. Medios_Prensa_Infobae
+    65. Medios_Prensa_El_Cronista
+    66. Medios_Prensa_La_Nacion
+    67. Medios_Prensa_Tiempo_Argentino
+    68. Medios_Prensa_Ninguno
+    69. ECE_Item_1
+    70. ECE_Item_2
+    71. ECE_Item_3
+    72. ECE_Item_4
+    73. ECE_Item_5
+    74. ECE_Item_6
+    75. ECE_Item_7
+    76. ECE_Item_5_Negativo
+    77. CDC_Massa_0
+    78. CDC_Massa_1
+    79. CDC_Massa_Tiempo
+    80. CDC_Bullrich_0
+    81. CDC_Bullrich_1
+    82. CDC_Bullrich_Tiempo
+    83. CDC_Schiaretti_0
+    84. CDC_Schiaretti_1
+    85. CDC_Schiaretti_Tiempo
+    86. CDC_Milei_0
+    87. CDC_Milei_1
+    88. CDC_Milei_Tiempo
+    89. CDC_Bregman_0
+    90. CDC_Bregman_1
+    91. CDC_Bregman_Tiempo
+    92. IP_Item_3_Respuesta
+    93. IP_Item_3_Tiempo
+    94. IP_Item_3_Izq_Candidato
+    95. IP_Item_3_Izq_Respuesta
+    96. IP_Item_3_Izq_Tiempo
+    97. IP_Item_3_Der_Candidato
+    98. IP_Item_3_Der_Respuesta
+    99. IP_Item_3_Der_Tiempo
+    100. IP_Item_4_Respuesta
+    101. IP_Item_4_Tiempo
+    102. IP_Item_4_Izq_Candidato
+    103. IP_Item_4_Izq_Respuesta
+    104. IP_Item_4_Izq_Tiempo
+    105. IP_Item_4_Der_Candidato
+    106. IP_Item_4_Der_Respuesta
+    107. IP_Item_4_Der_Tiempo
+    108. IP_Item_5_Respuesta
+    109. IP_Item_5_Tiempo
+    110. IP_Item_5_Izq_Candidato
+    111. IP_Item_5_Izq_Respuesta
+    112. IP_Item_5_Izq_Tiempo
+    113. IP_Item_5_Der_Candidato
+    114. IP_Item_5_Der_Respuesta
+    115. IP_Item_5_Der_Tiempo
+    116. IP_Item_6_Respuesta
+    117. IP_Item_6_Tiempo
+    118. IP_Item_6_Izq_Candidato
+    119. IP_Item_6_Izq_Respuesta
+    120. IP_Item_6_Izq_Tiempo
+    121. IP_Item_6_Der_Candidato
+    122. IP_Item_6_Der_Respuesta
+    123. IP_Item_6_Der_Tiempo
+    124. IP_Item_7_Respuesta
+    125. IP_Item_7_Tiempo
+    126. IP_Item_7_Izq_Candidato
+    127. IP_Item_7_Izq_Respuesta
+    128. IP_Item_7_Izq_Tiempo
+    129. IP_Item_7_Der_Candidato
+    130. IP_Item_7_Der_Respuesta
+    131. IP_Item_7_Der_Tiempo
+    132. IP_Item_8_Respuesta
+    133. IP_Item_8_Tiempo
+    134. IP_Item_8_Izq_Candidato
+    135. IP_Item_8_Izq_Respuesta
+    136. IP_Item_8_Izq_Tiempo
+    137. IP_Item_8_Der_Candidato
+    138. IP_Item_8_Der_Respuesta
+    139. IP_Item_8_Der_Tiempo
+    140. IP_Item_9_Respuesta
+    141. IP_Item_9_Tiempo
+    142. IP_Item_9_Izq_Candidato
+    143. IP_Item_9_Izq_Respuesta
+    144. IP_Item_9_Izq_Tiempo
+    145. IP_Item_9_Der_Candidato
+    146. IP_Item_9_Der_Respuesta
+    147. IP_Item_9_Der_Tiempo
+    148. IP_Item_10_Respuesta
+    149. IP_Item_10_Tiempo
+    150. IP_Item_10_Izq_Candidato
+    151. IP_Item_10_Izq_Respuesta
+    152. IP_Item_10_Izq_Tiempo
+    153. IP_Item_10_Der_Candidato
+    154. IP_Item_10_Der_Respuesta
+    155. IP_Item_10_Der_Tiempo
+    156. IP_Item_11_Respuesta
+    157. IP_Item_11_Tiempo
+    158. IP_Item_11_Izq_Candidato
+    159. IP_Item_11_Izq_Respuesta
+    160. IP_Item_11_Izq_Tiempo
+    161. IP_Item_11_Der_Candidato
+    162. IP_Item_11_Der_Respuesta
+    163. IP_Item_11_Der_Tiempo
+    164. IP_Item_16_Respuesta
+    165. IP_Item_16_Tiempo
+    166. IP_Item_16_Izq_Candidato
+    167. IP_Item_16_Izq_Respuesta
+    168. IP_Item_16_Izq_Tiempo
+    169. IP_Item_16_Der_Candidato
+    170. IP_Item_16_Der_Respuesta
+    171. IP_Item_16_Der_Tiempo
+    172. IP_Item_19_Respuesta
+    173. IP_Item_19_Tiempo
+    174. IP_Item_19_Izq_Candidato
+    175. IP_Item_19_Izq_Respuesta
+    176. IP_Item_19_Izq_Tiempo
+    177. IP_Item_19_Der_Candidato
+    178. IP_Item_19_Der_Respuesta
+    179. IP_Item_19_Der_Tiempo
+    180. IP_Item_20_Respuesta
+    181. IP_Item_20_Tiempo
+    182. IP_Item_20_Izq_Candidato
+    183. IP_Item_20_Izq_Respuesta
+    184. IP_Item_20_Izq_Tiempo
+    185. IP_Item_20_Der_Candidato
+    186. IP_Item_20_Der_Respuesta
+    187. IP_Item_20_Der_Tiempo
+    188. IP_Item_22_Respuesta
+    189. IP_Item_22_Tiempo
+    190. IP_Item_22_Izq_Candidato
+    191. IP_Item_22_Izq_Respuesta
+    192. IP_Item_22_Izq_Tiempo
+    193. IP_Item_22_Der_Candidato
+    194. IP_Item_22_Der_Respuesta
+    195. IP_Item_22_Der_Tiempo
+    196. IP_Item_23_Respuesta
+    197. IP_Item_23_Tiempo
+    198. IP_Item_23_Izq_Candidato
+    199. IP_Item_23_Izq_Respuesta
+    200. IP_Item_23_Izq_Tiempo
+    201. IP_Item_23_Der_Candidato
+    202. IP_Item_23_Der_Respuesta
+    203. IP_Item_23_Der_Tiempo
+    204. IP_Item_24_Respuesta
+    205. IP_Item_24_Tiempo
+    206. IP_Item_24_Izq_Candidato
+    207. IP_Item_24_Izq_Respuesta
+    208. IP_Item_24_Izq_Tiempo
+    209. IP_Item_24_Der_Candidato
+    210. IP_Item_24_Der_Respuesta
+    211. IP_Item_24_Der_Tiempo
+    212. IP_Item_25_Respuesta
+    213. IP_Item_25_Tiempo
+    214. IP_Item_25_Izq_Candidato
+    215. IP_Item_25_Izq_Respuesta
+    216. IP_Item_25_Izq_Tiempo
+    217. IP_Item_25_Der_Candidato
+    218. IP_Item_25_Der_Respuesta
+    219. IP_Item_25_Der_Tiempo
+    220. IP_Item_27_Respuesta
+    221. IP_Item_27_Tiempo
+    222. IP_Item_27_Izq_Candidato
+    223. IP_Item_27_Izq_Respuesta
+    224. IP_Item_27_Izq_Tiempo
+    225. IP_Item_27_Der_Candidato
+    226. IP_Item_27_Der_Respuesta
+    227. IP_Item_27_Der_Tiempo
+    228. IP_Item_28_Respuesta
+    229. IP_Item_28_Tiempo
+    230. IP_Item_28_Izq_Candidato
+    231. IP_Item_28_Izq_Respuesta
+    232. IP_Item_28_Izq_Tiempo
+    233. IP_Item_28_Der_Candidato
+    234. IP_Item_28_Der_Respuesta
+    235. IP_Item_28_Der_Tiempo
+    236. IP_Item_29_Respuesta
+    237. IP_Item_29_Tiempo
+    238. IP_Item_29_Izq_Candidato
+    239. IP_Item_29_Izq_Respuesta
+    240. IP_Item_29_Izq_Tiempo
+    241. IP_Item_29_Der_Candidato
+    242. IP_Item_29_Der_Respuesta
+    243. IP_Item_29_Der_Tiempo
+    244. IP_Item_30_Respuesta
+    245. IP_Item_30_Tiempo
+    246. IP_Item_30_Izq_Candidato
+    247. IP_Item_30_Izq_Respuesta
+    248. IP_Item_30_Izq_Tiempo
+    249. IP_Item_30_Der_Candidato
+    250. IP_Item_30_Der_Respuesta
+    251. IP_Item_30_Der_Tiempo
+    252. Orden_IP_Items
+    253. Ultimo_IP_Item
+    254. Orden_IP_Items_Asociados
+    255. Primeros_IP_Items_Asociados
+    256. Ultimo_IP_Item_Asociado
+    257. Indice_Positividad
+    258. Indice_Progresismo
+    259. Indice_Conservadurismo
+    260. Tiempos_Respuesta_Promedio_Pro_Izq
+    261. Tiempos_Respuesta_Promedio_Pro_Der
+    262. Tiempos_Respuesta_Promedio_Con_Izq
+    263. Tiempos_Respuesta_Promedio_Con_Der
+    264. Tiempos_Respuesta_Promedio_Pro
+    265. Tiempos_Respuesta_Promedio_Con
+    266. Sentimiento_Fase_Final
+    267. Evento_Estresante
+    268. Sabia_Del_Experimento
+    269. Usa_Sustancias
+    270. Tabaco
+    271. Alcohol
+    272. Marihuana
+    273. Drogas_Recreativas
+    274. Cual_Droga_Recreativa
+    275. Medicamentos
+    276. Cual_Medicamento
+    277. Otras_Sustancias
+    278. Horas_Sueno_Promedio
+    279. Sueno_Noche_Anterior
+    280. window_resolution_ini
+    281. window_resolution_end
+    282. c
+    283. CO_Item_3_Izq
+    284. CO_Item_3_Der
+    285. CO_Item_4_Izq
+    286. CO_Item_4_Der
+    287. CO_Item_5_Izq
+    288. CO_Item_5_Der
+    289. CO_Item_6_Izq
+    290. CO_Item_6_Der
+    291. CO_Item_7_Izq
+    292. CO_Item_7_Der
+    293. CO_Item_8_Izq
+    294. CO_Item_8_Der
+    295. CO_Item_9_Izq
+    296. CO_Item_9_Der
+    297. CO_Item_10_Izq
+    298. CO_Item_10_Der
+    299. CO_Item_11_Izq
+    300. CO_Item_11_Der
+    301. CO_Item_16_Izq
+    302. CO_Item_16_Der
+    303. CO_Item_19_Izq
+    304. CO_Item_19_Der
+    305. CO_Item_20_Izq
+    306. CO_Item_20_Der
+    307. CO_Item_22_Izq
+    308. CO_Item_22_Der
+    309. CO_Item_23_Izq
+    310. CO_Item_23_Der
+    311. CO_Item_24_Izq
+    312. CO_Item_24_Der
+    313. CO_Item_25_Izq
+    314. CO_Item_25_Der
+    315. CO_Item_27_Izq
+    316. CO_Item_27_Der
+    317. CO_Item_28_Izq
+    318. CO_Item_28_Der
+    319. CO_Item_29_Izq
+    320. CO_Item_29_Der
+    321. CO_Item_30_Izq
+    322. CO_Item_30_Der
+    323. CT_Item_3_Izq
+    324. CT_Item_3_Der
+    325. CT_Item_4_Izq
+    326. CT_Item_4_Der
+    327. CT_Item_5_Izq
+    328. CT_Item_5_Der
+    329. CT_Item_6_Izq
+    330. CT_Item_6_Der
+    331. CT_Item_7_Izq
+    332. CT_Item_7_Der
+    333. CT_Item_8_Izq
+    334. CT_Item_8_Der
+    335. CT_Item_9_Izq
+    336. CT_Item_9_Der
+    337. CT_Item_10_Izq
+    338. CT_Item_10_Der
+    339. CT_Item_11_Izq
+    340. CT_Item_11_Der
+    341. CT_Item_16_Izq
+    342. CT_Item_16_Der
+    343. CT_Item_19_Izq
+    344. CT_Item_19_Der
+    345. CT_Item_20_Izq
+    346. CT_Item_20_Der
+    347. CT_Item_22_Izq
+    348. CT_Item_22_Der
+    349. CT_Item_23_Izq
+    350. CT_Item_23_Der
+    351. CT_Item_24_Izq
+    352. CT_Item_24_Der
+    353. CT_Item_25_Izq
+    354. CT_Item_25_Der
+    355. CT_Item_27_Izq
+    356. CT_Item_27_Der
+    357. CT_Item_28_Izq
+    358. CT_Item_28_Der
+    359. CT_Item_29_Izq
+    360. CT_Item_29_Der
+    361. CT_Item_30_Izq
+    362. CT_Item_30_Der
+    363. CO_Pro
+    364. CO_Pro_Izq
+    365. CO_Pro_Der
+    366. CO_Con
+    367. CO_Con_Izq
+    368. CO_Con_Der
+    369. CT_Pro
+    370. CT_Pro_Izq
+    371. CT_Pro_Der
+    372. CT_Con
+    373. CT_Con_Izq
+    374. CT_Con_Der
+    375. CO_Congruentes_Promedio
+    376. CO_Incongruentes_Promedio
+    377. IP_Item_7_Respuesta_Original
+    378. IP_Item_7_Tiempo_Original
+    379. IP_Item_10_Respuesta_Original
+    380. IP_Item_10_Tiempo_Original
+    381. IP_Item_27_Respuesta_Original
+    382. IP_Item_27_Tiempo_Original
+    383. IP_Item_25_Respuesta_Original
+    384. IP_Item_25_Tiempo_Original
+    385. IP_Item_24_Respuesta_Original
+    386. IP_Item_24_Tiempo_Original
+    387. IP_Item_29_Respuesta_Original
+    388. IP_Item_29_Tiempo_Original
+    389. IP_Item_28_Respuesta_Original
+    390. IP_Item_28_Tiempo_Original
+    391. IP_Item_30_Respuesta_Original
+    392. IP_Item_30_Tiempo_Original
+    393. IP_Item_19_Respuesta_Original
+    394. IP_Item_19_Tiempo_Original
+    395. IP_Item_8_Respuesta_Original
+    396. IP_Item_8_Tiempo_Original
+    397. IP_Item_22_Respuesta_Original
+    398. IP_Item_22_Tiempo_Original
+    399. IP_Item_11_Respuesta_Original
+    400. IP_Item_11_Tiempo_Original
+    401. IP_Item_20_Respuesta_Original
+    402. IP_Item_20_Tiempo_Original
+    403. IP_Item_3_Respuesta_Original
+    404. IP_Item_3_Tiempo_Original
+    405. IP_Item_4_Respuesta_Original
+    406. IP_Item_4_Tiempo_Original
+    407. IP_Item_6_Respuesta_Original
+    408. IP_Item_6_Tiempo_Original
+    409. IP_Item_9_Respuesta_Original
+    410. IP_Item_9_Tiempo_Original
+    411. IP_Item_5_Respuesta_Original
+    412. IP_Item_5_Tiempo_Original
+    413. IP_Item_16_Respuesta_Original
+    414. IP_Item_16_Tiempo_Original
+    415. IP_Item_23_Respuesta_Original
+    416. IP_Item_23_Tiempo_Original
+    417. Genero_Agrupado
+    418. Inmueble_Agrupado
+    419. Fuente_Ingreso_Agrupada
+    420. Nivel_Educativo_Agrupado
+    421. Genero_.
+    422. Genero_femenino
+    423. Genero_fluido
+    424. Genero_género fluido 
+    425. Genero_masculino
+    426. Genero_no binario
+    427. Genero_sexo femenino
+    428. Genero_sin especificar 
+    429. Genero_trans femenina
+    430. Genero_travesti
+    431. Estrato_Social_alto
+    432. Estrato_Social_bajo
+    433. Estrato_Social_bajo medio
+    434. Estrato_Social_medio
+    435. Estrato_Social_medio alto
+    436. Nivel_Educativo_posgrado
+    437. Nivel_Educativo_primario
+    438. Nivel_Educativo_secundario
+    439. Nivel_Educativo_terciario
+    440. Nivel_Educativo_universitario
+    441. Fuente_Ingreso_.
+    442. Fuente_Ingreso_ahorros en plazo fijo 
+    443. Fuente_Ingreso_ama de casa
+    444. Fuente_Ingreso_artesana
+    445. Fuente_Ingreso_asignación universal por hijos 
+    446. Fuente_Ingreso_auh
+    447. Fuente_Ingreso_autogestion (arte y diseño)
+    448. Fuente_Ingreso_autónoma
+    449. Fuente_Ingreso_ayudo a mi viejo en el trabajo los fines de semana
+    450. Fuente_Ingreso_beca estatal
+    451. Fuente_Ingreso_beca institucional
+    452. Fuente_Ingreso_chagas auh 
+    453. Fuente_Ingreso_changas
+    454. Fuente_Ingreso_desempleada 
+    455. Fuente_Ingreso_desocupado
+    456. Fuente_Ingreso_docencia 
+    457. Fuente_Ingreso_emprendedor
+    458. Fuente_Ingreso_emprendedora
+    459. Fuente_Ingreso_emprendimiento
+    460. Fuente_Ingreso_emprendimiento 
+    461. Fuente_Ingreso_emprendimiento autogestivo
+    462. Fuente_Ingreso_emprendimiento propio
+    463. Fuente_Ingreso_empresa familiar 
+    464. Fuente_Ingreso_en este momento ama de casa
+    465. Fuente_Ingreso_estoy jubilada
+    466. Fuente_Ingreso_hasta hace un mes tenía un negocio que se fundio
+    467. Fuente_Ingreso_herencia
+    468. Fuente_Ingreso_independiente
+    469. Fuente_Ingreso_inversiones
+    470. Fuente_Ingreso_jubilacion
+    471. Fuente_Ingreso_jubilacion y pension
+    472. Fuente_Ingreso_jubilación
+    473. Fuente_Ingreso_jubilación 
+    474. Fuente_Ingreso_jubilación docente
+    475. Fuente_Ingreso_jubilación mia y de mi marido
+    476. Fuente_Ingreso_jubilada
+    477. Fuente_Ingreso_jubilada docente universitaris
+    478. Fuente_Ingreso_microemprendimiento 
+    479. Fuente_Ingreso_monotributista y jubilada docente
+    480. Fuente_Ingreso_monotributo 
+    481. Fuente_Ingreso_no poseo, me encuentro desempleada
+    482. Fuente_Ingreso_no trabajo 
+    483. Fuente_Ingreso_panadero fermentacion natural , independiente.
+    484. Fuente_Ingreso_pensión por discapacidad 
+    485. Fuente_Ingreso_pensión y jubilacion
+    486. Fuente_Ingreso_plan social
+    487. Fuente_Ingreso_profesional de salud independiente 
+    488. Fuente_Ingreso_programa social 
+    489. Fuente_Ingreso_propio
+    490. Fuente_Ingreso_renta
+    491. Fuente_Ingreso_retiro voluntario por discapacidad
+    492. Fuente_Ingreso_soy ama de casa
+    493. Fuente_Ingreso_soy emprendedor 
+    494. Fuente_Ingreso_soy estudiante y ama de casa 
+    495. Fuente_Ingreso_soy jubilada
+    496. Fuente_Ingreso_suaf
+    497. Fuente_Ingreso_subsidio por enfermedad 
+    498. Fuente_Ingreso_sustento familiar
+    499. Fuente_Ingreso_sustento familiar y también trabajo
+    500. Fuente_Ingreso_sustento familiar y trabajo
+    501. Fuente_Ingreso_tengo un emprendimiento de 14 años
+    502. Fuente_Ingreso_tengo un negocio
+    503. Fuente_Ingreso_tengo una pequeña empresa de recreación 
+    504. Fuente_Ingreso_tiene una empresa
+    505. Fuente_Ingreso_trabaja mi marido ,yo ama de casa
+    506. Fuente_Ingreso_trabajador autónomo / profesional
+    507. Fuente_Ingreso_trabajo
+    508. Fuente_Ingreso_trabajo informal, y cobro de asignación 
+    509. Fuente_Ingreso_trabajo y sustento familiar. ambos.
+    510. Fuente_Ingreso_trabajo, ayuda familiar, etc
+    511. Fuente_Ingreso_un poco de esto un poco de aquello
+    512. Fuente_Ingreso_vivo de mi profesión y además soy jubilada
+    513. Fuente_Ingreso_y …jubilada 
+    514. Inmueble_Residencia_ compartido con familia
+    515. Inmueble_Residencia_.nb
+    516. Inmueble_Residencia_alquilo
+    517. Inmueble_Residencia_alquilo a un familiar (accesible)
+    518. Inmueble_Residencia_casa de mi pareja
+    519. Inmueble_Residencia_casa de mis abuelos
+    520. Inmueble_Residencia_casa de mis padres
+    521. Inmueble_Residencia_casa de padre
+    522. Inmueble_Residencia_cedido
+    523. Inmueble_Residencia_comoartido con un familiar
+    524. Inmueble_Residencia_con mis padres
+    525. Inmueble_Residencia_con padres
+    526. Inmueble_Residencia_conviviente
+    527. Inmueble_Residencia_convivo con una persona que tiene su casa propia hace algunos meses.
+    528. Inmueble_Residencia_de mi familia
+    529. Inmueble_Residencia_de mi familia 
+    530. Inmueble_Residencia_de mi madre
+    531. Inmueble_Residencia_de mi pareja
+    532. Inmueble_Residencia_de mis padres
+    533. Inmueble_Residencia_de mí pareja
+    534. Inmueble_Residencia_departamento que mi papá me cede
+    535. Inmueble_Residencia_en la casa de mi madre
+    536. Inmueble_Residencia_en proceso de propio
+    537. Inmueble_Residencia_es de mi madre, vivo con ella
+    538. Inmueble_Residencia_es de mi pareja
+    539. Inmueble_Residencia_familiar
+    540. Inmueble_Residencia_familiar compartido
+    541. Inmueble_Residencia_herencia en vida
+    542. Inmueble_Residencia_hipotecado
+    543. Inmueble_Residencia_la casa de mis padres
+    544. Inmueble_Residencia_la casa de mis papas
+    545. Inmueble_Residencia_la casa de mis xadres.
+    546. Inmueble_Residencia_lo de mí suegro 
+    547. Inmueble_Residencia_me mude hace poco con mis papás 
+    548. Inmueble_Residencia_mi madre es propietaria 
+    549. Inmueble_Residencia_ocupado
+    550. Inmueble_Residencia_padres
+    551. Inmueble_Residencia_plan de vivienda
+    552. Inmueble_Residencia_prestado
+    553. Inmueble_Residencia_prestado de palabra
+    554. Inmueble_Residencia_prestado por mis suegros
+    555. Inmueble_Residencia_propio
+    556. Inmueble_Residencia_propio con hipoteca 
+    557. Inmueble_Residencia_propio con hipoteca uva
+    558. Inmueble_Residencia_propio en terreno familiar 
+    559. Inmueble_Residencia_propio hipotecado
+    560. Inmueble_Residencia_usufructo
+    561. Inmueble_Residencia_vivo con mi mamá 
+    562. Inmueble_Residencia_vivo con mis padres 
+    563. Inmueble_Residencia_vivo con mis padres, que son propietarios 
+    564. Inmueble_Residencia_voy y vengo entre casa de mí padre y mí pareja
+    565. Voto_2019_Alberto Fernandez
+    566. Voto_2019_J. Gomez Centurión
+    567. Voto_2019_J.L. Espert
+    568. Voto_2019_Mauricio Macri
+    569. Voto_2019_Nicolás Del Caño
+    570. Voto_2019_Roberto Lavagna
+    571. Voto_2019_Voto en blanco
+    572. Voto_2019_no vote
+    573. Voto_2019_prefiero no decirlo
+    574. Voto_PASO_2023_no
+    575. Voto_PASO_2023_prefiero no decirlo
+    576. Voto_PASO_2023_si
+    577. Candidato_PASO_2023_Gabriel Solano
+    578. Candidato_PASO_2023_Guillermo Moreno
+    579. Candidato_PASO_2023_Horacio Rodriguez Larreta
+    580. Candidato_PASO_2023_Javier Milei
+    581. Candidato_PASO_2023_Juan Grabois
+    582. Candidato_PASO_2023_Juan Schiaretti
+    583. Candidato_PASO_2023_Manuela Castañeira
+    584. Candidato_PASO_2023_Myriam Bregman
+    585. Candidato_PASO_2023_Patricia Bullrich
+    586. Candidato_PASO_2023_Prefiero no decirlo
+    587. Candidato_PASO_2023_Sergio Massa
+    588. Candidato_PASO_2023_Voto en blanco
+    589. Candidato_PASO_2023_no aplica
+    590. Afiliacion_Politica_no
+    591. Afiliacion_Politica_si
+    592. Edad_Agrupada_Menos_25
+    593. Edad_Agrupada_Entre_25_Y_34
+    594. Edad_Agrupada_Entre_35_Y_44
+    595. Edad_Agrupada_Entre_45_Y_54
+    596. Edad_Agrupada_Mayor_55
+    597. Votara_2023_no
+    598. Votara_2023_no sabe
+    599. Votara_2023_si
+    600. Categoria_PASO_2023_No apply
+    601. Categoria_PASO_2023_No response
 
 
 Ballotage:
-  Casos: 1294
-  Columnas: 216
-  Memoria: 9.8 MB
+  Casos: 1255
+  Columnas: 555
+  Memoria: 9.4 MB
 
   Columnas incluidas:
-    1. id
-    2. window_resolution_ini
-    3. fase_1.caracterizacion_personal.genero
-    4. fase_1.caracterizacion_personal.edad
-    5. fase_1.caracterizacion_personal.nacionalidad
-    6. fase_1.caracterizacion_personal.provincia
-    7. fase_1.caracterizacion_personal.e_social
-    8. fase_1.caracterizacion_personal.niv_educativo
-    9. fase_1.caracterizacion_personal.f_ingreso
-    10. fase_1.caracterizacion_personal.inmueble_res
-    11. fase_1.caracterizacion_politica.voto_2019
-    12. fase_1.caracterizacion_politica.voto_PASO_2023
-    13. fase_1.caracterizacion_politica.candidato_PASO_2023
-    14. fase_1.caracterizacion_politica.votara_2023
-    15. fase_1.caracterizacion_politica.afiliacion_pol
-    16. fase_1.caracterizacion_politica.autopercepcion_0
-    17. fase_1.caracterizacion_politica.autopercepcion_1
-    18. fase_1.caracterizacion_politica.autopercepcion_2
-    19. fase_1.caracterizacion_politica.cercania_Sergio_MassaSergio Massa
-    20. fase_1.caracterizacion_politica.cercania_Javier_MileiJavier Milei
-    21. fase_1.caracterizacion_medios_comunicacion.medios_informacion
-    22. fase_1.caracterizacion_medios_comunicacion.red_social
-    23. fase_1.caracterizacion_medios_comunicacion.influencia_redes_0
-    24. fase_1.caracterizacion_medios_comunicacion.medios_prensa
-    25. fase_1.caracterizacion_medios_comunicacion.influencia_prensa_0
-    26. fase_2.caracterizacion_electoral.ece_item_1
-    27. fase_2.caracterizacion_electoral.ece_item_2
-    28. fase_2.caracterizacion_electoral.ece_item_3
-    29. fase_2.caracterizacion_electoral.ece_item_4
-    30. fase_2.caracterizacion_electoral.ece_item_5
-    31. fase_2.caracterizacion_electoral.ece_item_6
-    32. fase_2.caracterizacion_electoral.ece_item_7
-    33. fase_2.caracterizacion_candidatos.Sergio Massa.cdc_0
-    34. fase_2.caracterizacion_candidatos.Sergio Massa.cdc_1
-    35. fase_2.caracterizacion_candidatos.Sergio Massa.time
-    36. fase_2.caracterizacion_candidatos.Javier Milei.cdc_0
-    37. fase_2.caracterizacion_candidatos.Javier Milei.cdc_1
-    38. fase_2.caracterizacion_candidatos.Javier Milei.time
-    39. fase_3.IP.IP_item_4.IP_respuesta
-    40. fase_3.IP.IP_item_4.time
-    41. fase_3.IP.IP_item_23.IP_respuesta
-    42. fase_3.IP.IP_item_23.time
-    43. fase_3.IP.IP_item_3.IP_respuesta
-    44. fase_3.IP.IP_item_3.time
-    45. fase_3.IP.IP_item_8.IP_respuesta
-    46. fase_3.IP.IP_item_8.time
-    47. fase_3.IP.IP_item_7.IP_respuesta
-    48. fase_3.IP.IP_item_7.time
-    49. fase_3.IP.IP_item_28.IP_respuesta
-    50. fase_3.IP.IP_item_28.time
-    51. fase_3.IP.IP_item_11.IP_respuesta
-    52. fase_3.IP.IP_item_11.time
-    53. fase_3.IP.IP_item_30.IP_respuesta
-    54. fase_3.IP.IP_item_30.time
-    55. fase_3.IP.IP_item_20.IP_respuesta
-    56. fase_3.IP.IP_item_20.time
-    57. fase_3.IP.IP_item_6.IP_respuesta
-    58. fase_3.IP.IP_item_6.time
-    59. fase_3.IP.IP_item_25.IP_respuesta
-    60. fase_3.IP.IP_item_25.time
-    61. fase_3.IP.IP_item_22.IP_respuesta
-    62. fase_3.IP.IP_item_22.time
-    63. fase_3.IP.IP_item_9.IP_respuesta
-    64. fase_3.IP.IP_item_9.time
-    65. fase_3.IP.IP_item_29.IP_respuesta
-    66. fase_3.IP.IP_item_29.time
-    67. fase_3.IP.IP_item_10.IP_respuesta
-    68. fase_3.IP.IP_item_10.time
-    69. fase_3.IP.IP_item_19.IP_respuesta
-    70. fase_3.IP.IP_item_19.time
-    71. fase_3.IP.IP_item_27.IP_respuesta
-    72. fase_3.IP.IP_item_27.time
-    73. fase_3.IP.IP_item_5.IP_respuesta
-    74. fase_3.IP.IP_item_5.time
-    75. fase_3.IP.IP_item_16.IP_respuesta
-    76. fase_3.IP.IP_item_16.time
-    77. fase_3.IP_modificada.IP_item_25_Izq.candidato
-    78. fase_3.IP_modificada.IP_item_25_Izq.IP_respuesta
-    79. fase_3.IP_modificada.IP_item_25_Izq.tiempo
-    80. fase_3.IP_modificada.IP_item_3_Izq.candidato
-    81. fase_3.IP_modificada.IP_item_3_Izq.IP_respuesta
-    82. fase_3.IP_modificada.IP_item_3_Izq.tiempo
-    83. fase_3.IP_modificada.IP_item_27_Izq.candidato
-    84. fase_3.IP_modificada.IP_item_27_Izq.IP_respuesta
-    85. fase_3.IP_modificada.IP_item_27_Izq.tiempo
-    86. fase_3.IP_modificada.IP_item_29_Der.candidato
-    87. fase_3.IP_modificada.IP_item_29_Der.IP_respuesta
-    88. fase_3.IP_modificada.IP_item_29_Der.tiempo
-    89. fase_3.IP_modificada.IP_item_8_Izq.candidato
-    90. fase_3.IP_modificada.IP_item_8_Izq.IP_respuesta
-    91. fase_3.IP_modificada.IP_item_8_Izq.tiempo
-    92. fase_3.IP_modificada.IP_item_5_Der.candidato
-    93. fase_3.IP_modificada.IP_item_5_Der.IP_respuesta
-    94. fase_3.IP_modificada.IP_item_5_Der.tiempo
-    95. fase_3.IP_modificada.IP_item_28_Izq.candidato
-    96. fase_3.IP_modificada.IP_item_28_Izq.IP_respuesta
-    97. fase_3.IP_modificada.IP_item_28_Izq.tiempo
-    98. fase_3.IP_modificada.IP_item_8_Der.candidato
-    99. fase_3.IP_modificada.IP_item_8_Der.IP_respuesta
-    100. fase_3.IP_modificada.IP_item_8_Der.tiempo
-    101. fase_3.IP_modificada.IP_item_11_Der.candidato
-    102. fase_3.IP_modificada.IP_item_11_Der.IP_respuesta
-    103. fase_3.IP_modificada.IP_item_11_Der.tiempo
-    104. fase_3.IP_modificada.IP_item_3_Der.candidato
-    105. fase_3.IP_modificada.IP_item_3_Der.IP_respuesta
-    106. fase_3.IP_modificada.IP_item_3_Der.tiempo
-    107. fase_3.IP_modificada.IP_item_7_Izq.candidato
-    108. fase_3.IP_modificada.IP_item_7_Izq.IP_respuesta
-    109. fase_3.IP_modificada.IP_item_7_Izq.tiempo
-    110. fase_3.IP_modificada.IP_item_5_Izq.candidato
-    111. fase_3.IP_modificada.IP_item_5_Izq.IP_respuesta
-    112. fase_3.IP_modificada.IP_item_5_Izq.tiempo
-    113. fase_3.IP_modificada.IP_item_28_Der.candidato
-    114. fase_3.IP_modificada.IP_item_28_Der.IP_respuesta
-    115. fase_3.IP_modificada.IP_item_28_Der.tiempo
-    116. fase_3.IP_modificada.IP_item_24_Der.candidato
-    117. fase_3.IP_modificada.IP_item_24_Der.IP_respuesta
-    118. fase_3.IP_modificada.IP_item_24_Der.tiempo
-    119. fase_3.IP_modificada.IP_item_29_Izq.candidato
-    120. fase_3.IP_modificada.IP_item_29_Izq.IP_respuesta
-    121. fase_3.IP_modificada.IP_item_29_Izq.tiempo
-    122. fase_3.IP_modificada.IP_item_27_Der.candidato
-    123. fase_3.IP_modificada.IP_item_27_Der.IP_respuesta
-    124. fase_3.IP_modificada.IP_item_27_Der.tiempo
-    125. fase_3.IP_modificada.IP_item_24_Izq.candidato
-    126. fase_3.IP_modificada.IP_item_24_Izq.IP_respuesta
-    127. fase_3.IP_modificada.IP_item_24_Izq.tiempo
-    128. fase_3.IP_modificada.IP_item_11_Izq.candidato
-    129. fase_3.IP_modificada.IP_item_11_Izq.IP_respuesta
-    130. fase_3.IP_modificada.IP_item_11_Izq.tiempo
-    131. fase_3.IP_modificada.IP_item_25_Der.candidato
-    132. fase_3.IP_modificada.IP_item_25_Der.IP_respuesta
-    133. fase_3.IP_modificada.IP_item_25_Der.tiempo
-    134. fase_3.IP_modificada.IP_item_7_Der.candidato
-    135. fase_4.sentimiento_fase_final
-    136. fase_4.evento_estresante
-    137. fase_4.sabia_del_experimento
-    138. fase_4.usa_sustancias
-    139. fase_4.tabaco
-    140. fase_4.tomaste_drogas_recreativas
-    141. fase_4.alcohol
-    142. fase_4.marihuana
-    143. fase_4.medicamentos
-    144. fase_4.cual_medicamento
-    145. fase_4.cual_droga_recreativa
-    146. fase_4.horas_sueño_promedio
-    147. fase_4.sueño_noche_anterior
-    148. fase_4.otras_sustancias
-    149. window_resolution_end
-    150. c
-    151. fase_3.IP.IP_item_24.IP_respuesta
-    152. fase_3.IP.IP_item_24.time
-    153. fase_3.IP_modificada.IP_item_22_Der.candidato
-    154. fase_3.IP_modificada.IP_item_22_Der.IP_respuesta
-    155. fase_3.IP_modificada.IP_item_22_Der.tiempo
-    156. fase_3.IP_modificada.IP_item_22_Izq.candidato
-    157. fase_3.IP_modificada.IP_item_22_Izq.IP_respuesta
-    158. fase_3.IP_modificada.IP_item_22_Izq.tiempo
-    159. fase_3.IP_modificada.IP_item_9_Der.candidato
-    160. fase_3.IP_modificada.IP_item_9_Der.IP_respuesta
-    161. fase_3.IP_modificada.IP_item_9_Der.tiempo
-    162. fase_3.IP_modificada.IP_item_16_Izq.candidato
-    163. fase_3.IP_modificada.IP_item_16_Izq.IP_respuesta
-    164. fase_3.IP_modificada.IP_item_16_Izq.tiempo
-    165. fase_3.IP_modificada.IP_item_30_Der.candidato
-    166. fase_3.IP_modificada.IP_item_30_Der.IP_respuesta
-    167. fase_3.IP_modificada.IP_item_30_Der.tiempo
-    168. fase_3.IP_modificada.IP_item_16_Der.candidato
-    169. fase_3.IP_modificada.IP_item_16_Der.IP_respuesta
-    170. fase_3.IP_modificada.IP_item_16_Der.tiempo
-    171. fase_3.IP_modificada.IP_item_9_Izq.candidato
-    172. fase_3.IP_modificada.IP_item_9_Izq.IP_respuesta
-    173. fase_3.IP_modificada.IP_item_9_Izq.tiempo
-    174. fase_3.IP_modificada.IP_item_6_Izq.candidato
-    175. fase_3.IP_modificada.IP_item_6_Izq.IP_respuesta
-    176. fase_3.IP_modificada.IP_item_6_Izq.tiempo
-    177. fase_3.IP_modificada.IP_item_6_Der.candidato
-    178. fase_3.IP_modificada.IP_item_6_Der.IP_respuesta
-    179. fase_3.IP_modificada.IP_item_6_Der.tiempo
-    180. fase_3.IP_modificada.IP_item_30_Izq.candidato
-    181. fase_3.IP_modificada.IP_item_30_Izq.IP_respuesta
-    182. fase_3.IP_modificada.IP_item_30_Izq.tiempo
-    183. fase_3.IP_modificada.IP_item_4_Der.candidato
-    184. fase_3.IP_modificada.IP_item_4_Der.IP_respuesta
-    185. fase_3.IP_modificada.IP_item_4_Der.tiempo
-    186. fase_3.IP_modificada.IP_item_23_Der.candidato
-    187. fase_3.IP_modificada.IP_item_23_Der.IP_respuesta
-    188. fase_3.IP_modificada.IP_item_23_Der.tiempo
-    189. fase_3.IP_modificada.IP_item_4_Izq.candidato
-    190. fase_3.IP_modificada.IP_item_4_Izq.IP_respuesta
-    191. fase_3.IP_modificada.IP_item_4_Izq.tiempo
-    192. fase_3.IP_modificada.IP_item_10_Der.candidato
-    193. fase_3.IP_modificada.IP_item_10_Der.IP_respuesta
-    194. fase_3.IP_modificada.IP_item_10_Der.tiempo
-    195. fase_3.IP_modificada.IP_item_23_Izq.candidato
-    196. fase_3.IP_modificada.IP_item_23_Izq.IP_respuesta
-    197. fase_3.IP_modificada.IP_item_23_Izq.tiempo
-    198. fase_3.IP_modificada.IP_item_10_Izq.candidato
-    199. fase_3.IP_modificada.IP_item_7_Der.IP_respuesta
-    200. fase_3.IP_modificada.IP_item_7_Der.tiempo
-    201. fase_3.IP_modificada.IP_item_19_Der.candidato
-    202. fase_3.IP_modificada.IP_item_19_Der.IP_respuesta
-    203. fase_3.IP_modificada.IP_item_19_Der.tiempo
-    204. fase_3.IP_modificada.IP_item_19_Izq.candidato
-    205. fase_3.IP_modificada.IP_item_19_Izq.IP_respuesta
-    206. fase_3.IP_modificada.IP_item_19_Izq.tiempo
-    207. fase_3.IP_modificada.IP_item_20_Izq.candidato
-    208. fase_3.IP_modificada.IP_item_20_Izq.IP_respuesta
-    209. fase_3.IP_modificada.IP_item_20_Izq.tiempo
-    210. fase_3.IP_modificada.IP_item_20_Der.candidato
-    211. fase_3.IP_modificada.IP_item_20_Der.IP_respuesta
-    212. fase_3.IP_modificada.IP_item_20_Der.tiempo
-    213. fase_3.IP_modificada.IP_item_10_Izq.IP_respuesta
-    214. fase_3.IP_modificada.IP_item_10_Izq.tiempo
-    215. CO_Congruentes_Promedio
-    216. CO_Incongruentes_Promedio
+    1. ID
+    2. Edad
+    3. Edad_Agrupada
+    4. Genero
+    5. Estrato_Social
+    6. Nivel_Educativo
+    7. Fuente_Ingreso
+    8. Inmueble_Residencia
+    9. Provincia
+    10. Region
+    11. Region_BsAs
+    12. Region_CABA
+    13. Region_Centro
+    14. Region_Cuyo
+    15. Region_Norte
+    16. Region_Patagonia
+    17. Nacionalidad
+    18. Voto_2019
+    19. Voto_PASO_2023
+    20. Candidato_PASO_2023
+    21. Categoria_PASO_2023
+    22. Categoria_PASO_2023_Blank
+    23. Categoria_PASO_2023_Centre
+    24. Categoria_PASO_2023_Left_Wing
+    25. Categoria_PASO_2023_Moderate_Right_A
+    26. Categoria_PASO_2023_Moderate_Right_B
+    27. Categoria_PASO_2023_Progressivism
+    28. Categoria_PASO_2023_Right_Wing_Libertarian
+    29. Votara_2023
+    30. Afiliacion_Politica
+    31. Autopercepcion_Izq_Der
+    32. Autopercepcion_Izq_Der_Agrupada
+    33. Autopercepcion_Izq_Der_Agrupada_A
+    34. Autopercepcion_Izq_Der_Agrupada_B
+    35. Autopercepcion_Izq_Der_Agrupada_C
+    36. Autopercepcion_Con_Pro
+    37. Autopercepcion_Per_Antiper
+    38. Cercania_Massa
+    39. Cercania_Milei
+    40. Influencia_Redes
+    41. Red_Social
+    42. Red_Social_Twitter
+    43. Red_Social_Facebook
+    44. Red_Social_Instagram
+    45. Red_Social_Threads
+    46. Red_Social_Tiktok
+    47. Red_Social_Youtube
+    48. Red_Social_Whatsapp
+    49. Red_Social_Telegram
+    50. Influencia_Prensa
+    51. Medios_Informacion
+    52. Medios_Prensa
+    53. Medios_Prensa_Ambito_Financiero
+    54. Medios_Prensa_Prensa_Obrera
+    55. Medios_Prensa_Diario_Universal
+    56. Medios_Prensa_Popular
+    57. Medios_Prensa_Izquierda_Diario
+    58. Medios_Prensa_Clarin
+    59. Medios_Prensa_Perfil
+    60. Medios_Prensa_Pagina_12
+    61. Medios_Prensa_Infobae
+    62. Medios_Prensa_El_Cronista
+    63. Medios_Prensa_La_Nacion
+    64. Medios_Prensa_Tiempo_Argentino
+    65. Medios_Prensa_Ninguno
+    66. ECE_Item_1
+    67. ECE_Item_2
+    68. ECE_Item_3
+    69. ECE_Item_4
+    70. ECE_Item_5
+    71. ECE_Item_6
+    72. ECE_Item_7
+    73. ECE_Item_5_Negativo
+    74. CDC_Massa_0
+    75. CDC_Massa_1
+    76. CDC_Massa_Tiempo
+    77. CDC_Milei_0
+    78. CDC_Milei_1
+    79. CDC_Milei_Tiempo
+    80. IP_Item_3_Respuesta
+    81. IP_Item_3_Tiempo
+    82. IP_Item_3_Izq_Candidato
+    83. IP_Item_3_Izq_Respuesta
+    84. IP_Item_3_Izq_Tiempo
+    85. IP_Item_3_Der_Candidato
+    86. IP_Item_3_Der_Respuesta
+    87. IP_Item_3_Der_Tiempo
+    88. IP_Item_4_Respuesta
+    89. IP_Item_4_Tiempo
+    90. IP_Item_4_Izq_Candidato
+    91. IP_Item_4_Izq_Respuesta
+    92. IP_Item_4_Izq_Tiempo
+    93. IP_Item_4_Der_Candidato
+    94. IP_Item_4_Der_Respuesta
+    95. IP_Item_4_Der_Tiempo
+    96. IP_Item_5_Respuesta
+    97. IP_Item_5_Tiempo
+    98. IP_Item_5_Izq_Candidato
+    99. IP_Item_5_Izq_Respuesta
+    100. IP_Item_5_Izq_Tiempo
+    101. IP_Item_5_Der_Candidato
+    102. IP_Item_5_Der_Respuesta
+    103. IP_Item_5_Der_Tiempo
+    104. IP_Item_6_Respuesta
+    105. IP_Item_6_Tiempo
+    106. IP_Item_6_Izq_Candidato
+    107. IP_Item_6_Izq_Respuesta
+    108. IP_Item_6_Izq_Tiempo
+    109. IP_Item_6_Der_Candidato
+    110. IP_Item_6_Der_Respuesta
+    111. IP_Item_6_Der_Tiempo
+    112. IP_Item_7_Respuesta
+    113. IP_Item_7_Tiempo
+    114. IP_Item_7_Izq_Candidato
+    115. IP_Item_7_Izq_Respuesta
+    116. IP_Item_7_Izq_Tiempo
+    117. IP_Item_7_Der_Candidato
+    118. IP_Item_7_Der_Respuesta
+    119. IP_Item_7_Der_Tiempo
+    120. IP_Item_8_Respuesta
+    121. IP_Item_8_Tiempo
+    122. IP_Item_8_Izq_Candidato
+    123. IP_Item_8_Izq_Respuesta
+    124. IP_Item_8_Izq_Tiempo
+    125. IP_Item_8_Der_Candidato
+    126. IP_Item_8_Der_Respuesta
+    127. IP_Item_8_Der_Tiempo
+    128. IP_Item_9_Respuesta
+    129. IP_Item_9_Tiempo
+    130. IP_Item_9_Izq_Candidato
+    131. IP_Item_9_Izq_Respuesta
+    132. IP_Item_9_Izq_Tiempo
+    133. IP_Item_9_Der_Candidato
+    134. IP_Item_9_Der_Respuesta
+    135. IP_Item_9_Der_Tiempo
+    136. IP_Item_10_Respuesta
+    137. IP_Item_10_Tiempo
+    138. IP_Item_10_Izq_Candidato
+    139. IP_Item_10_Izq_Respuesta
+    140. IP_Item_10_Izq_Tiempo
+    141. IP_Item_10_Der_Candidato
+    142. IP_Item_10_Der_Respuesta
+    143. IP_Item_10_Der_Tiempo
+    144. IP_Item_11_Respuesta
+    145. IP_Item_11_Tiempo
+    146. IP_Item_11_Izq_Candidato
+    147. IP_Item_11_Izq_Respuesta
+    148. IP_Item_11_Izq_Tiempo
+    149. IP_Item_11_Der_Candidato
+    150. IP_Item_11_Der_Respuesta
+    151. IP_Item_11_Der_Tiempo
+    152. IP_Item_16_Respuesta
+    153. IP_Item_16_Tiempo
+    154. IP_Item_16_Izq_Candidato
+    155. IP_Item_16_Izq_Respuesta
+    156. IP_Item_16_Izq_Tiempo
+    157. IP_Item_16_Der_Candidato
+    158. IP_Item_16_Der_Respuesta
+    159. IP_Item_16_Der_Tiempo
+    160. IP_Item_19_Respuesta
+    161. IP_Item_19_Tiempo
+    162. IP_Item_19_Izq_Candidato
+    163. IP_Item_19_Izq_Respuesta
+    164. IP_Item_19_Izq_Tiempo
+    165. IP_Item_19_Der_Candidato
+    166. IP_Item_19_Der_Respuesta
+    167. IP_Item_19_Der_Tiempo
+    168. IP_Item_20_Respuesta
+    169. IP_Item_20_Tiempo
+    170. IP_Item_20_Izq_Candidato
+    171. IP_Item_20_Izq_Respuesta
+    172. IP_Item_20_Izq_Tiempo
+    173. IP_Item_20_Der_Candidato
+    174. IP_Item_20_Der_Respuesta
+    175. IP_Item_20_Der_Tiempo
+    176. IP_Item_22_Respuesta
+    177. IP_Item_22_Tiempo
+    178. IP_Item_22_Izq_Candidato
+    179. IP_Item_22_Izq_Respuesta
+    180. IP_Item_22_Izq_Tiempo
+    181. IP_Item_22_Der_Candidato
+    182. IP_Item_22_Der_Respuesta
+    183. IP_Item_22_Der_Tiempo
+    184. IP_Item_23_Respuesta
+    185. IP_Item_23_Tiempo
+    186. IP_Item_23_Izq_Candidato
+    187. IP_Item_23_Izq_Respuesta
+    188. IP_Item_23_Izq_Tiempo
+    189. IP_Item_23_Der_Candidato
+    190. IP_Item_23_Der_Respuesta
+    191. IP_Item_23_Der_Tiempo
+    192. IP_Item_24_Respuesta
+    193. IP_Item_24_Tiempo
+    194. IP_Item_24_Izq_Candidato
+    195. IP_Item_24_Izq_Respuesta
+    196. IP_Item_24_Izq_Tiempo
+    197. IP_Item_24_Der_Candidato
+    198. IP_Item_24_Der_Respuesta
+    199. IP_Item_24_Der_Tiempo
+    200. IP_Item_25_Respuesta
+    201. IP_Item_25_Tiempo
+    202. IP_Item_25_Izq_Candidato
+    203. IP_Item_25_Izq_Respuesta
+    204. IP_Item_25_Izq_Tiempo
+    205. IP_Item_25_Der_Candidato
+    206. IP_Item_25_Der_Respuesta
+    207. IP_Item_25_Der_Tiempo
+    208. IP_Item_27_Respuesta
+    209. IP_Item_27_Tiempo
+    210. IP_Item_27_Izq_Candidato
+    211. IP_Item_27_Izq_Respuesta
+    212. IP_Item_27_Izq_Tiempo
+    213. IP_Item_27_Der_Candidato
+    214. IP_Item_27_Der_Respuesta
+    215. IP_Item_27_Der_Tiempo
+    216. IP_Item_28_Respuesta
+    217. IP_Item_28_Tiempo
+    218. IP_Item_28_Izq_Candidato
+    219. IP_Item_28_Izq_Respuesta
+    220. IP_Item_28_Izq_Tiempo
+    221. IP_Item_28_Der_Candidato
+    222. IP_Item_28_Der_Respuesta
+    223. IP_Item_28_Der_Tiempo
+    224. IP_Item_29_Respuesta
+    225. IP_Item_29_Tiempo
+    226. IP_Item_29_Izq_Candidato
+    227. IP_Item_29_Izq_Respuesta
+    228. IP_Item_29_Izq_Tiempo
+    229. IP_Item_29_Der_Candidato
+    230. IP_Item_29_Der_Respuesta
+    231. IP_Item_29_Der_Tiempo
+    232. IP_Item_30_Respuesta
+    233. IP_Item_30_Tiempo
+    234. IP_Item_30_Izq_Candidato
+    235. IP_Item_30_Izq_Respuesta
+    236. IP_Item_30_Izq_Tiempo
+    237. IP_Item_30_Der_Candidato
+    238. IP_Item_30_Der_Respuesta
+    239. IP_Item_30_Der_Tiempo
+    240. Orden_IP_Items
+    241. Ultimo_IP_Item
+    242. Orden_IP_Items_Asociados
+    243. Primeros_IP_Items_Asociados
+    244. Ultimo_IP_Item_Asociado
+    245. Indice_Positividad
+    246. Indice_Progresismo
+    247. Indice_Conservadurismo
+    248. Tiempos_Respuesta_Promedio_Pro_Izq
+    249. Tiempos_Respuesta_Promedio_Pro_Der
+    250. Tiempos_Respuesta_Promedio_Con_Izq
+    251. Tiempos_Respuesta_Promedio_Con_Der
+    252. Tiempos_Respuesta_Promedio_Pro
+    253. Tiempos_Respuesta_Promedio_Con
+    254. Sentimiento_Fase_Final
+    255. Evento_Estresante
+    256. Sabia_Del_Experimento
+    257. Usa_Sustancias
+    258. Tabaco
+    259. Alcohol
+    260. Marihuana
+    261. Drogas_Recreativas
+    262. Cual_Droga_Recreativa
+    263. Medicamentos
+    264. Cual_Medicamento
+    265. Otras_Sustancias
+    266. Horas_Sueno_Promedio
+    267. Sueno_Noche_Anterior
+    268. window_resolution_ini
+    269. window_resolution_end
+    270. c
+    271. CO_Item_3_Izq
+    272. CO_Item_3_Der
+    273. CO_Item_4_Izq
+    274. CO_Item_4_Der
+    275. CO_Item_5_Izq
+    276. CO_Item_5_Der
+    277. CO_Item_6_Izq
+    278. CO_Item_6_Der
+    279. CO_Item_7_Izq
+    280. CO_Item_7_Der
+    281. CO_Item_8_Izq
+    282. CO_Item_8_Der
+    283. CO_Item_9_Izq
+    284. CO_Item_9_Der
+    285. CO_Item_10_Izq
+    286. CO_Item_10_Der
+    287. CO_Item_11_Izq
+    288. CO_Item_11_Der
+    289. CO_Item_16_Izq
+    290. CO_Item_16_Der
+    291. CO_Item_19_Izq
+    292. CO_Item_19_Der
+    293. CO_Item_20_Izq
+    294. CO_Item_20_Der
+    295. CO_Item_22_Izq
+    296. CO_Item_22_Der
+    297. CO_Item_23_Izq
+    298. CO_Item_23_Der
+    299. CO_Item_24_Izq
+    300. CO_Item_24_Der
+    301. CO_Item_25_Izq
+    302. CO_Item_25_Der
+    303. CO_Item_27_Izq
+    304. CO_Item_27_Der
+    305. CO_Item_28_Izq
+    306. CO_Item_28_Der
+    307. CO_Item_29_Izq
+    308. CO_Item_29_Der
+    309. CO_Item_30_Izq
+    310. CO_Item_30_Der
+    311. CT_Item_3_Izq
+    312. CT_Item_3_Der
+    313. CT_Item_4_Izq
+    314. CT_Item_4_Der
+    315. CT_Item_5_Izq
+    316. CT_Item_5_Der
+    317. CT_Item_6_Izq
+    318. CT_Item_6_Der
+    319. CT_Item_7_Izq
+    320. CT_Item_7_Der
+    321. CT_Item_8_Izq
+    322. CT_Item_8_Der
+    323. CT_Item_9_Izq
+    324. CT_Item_9_Der
+    325. CT_Item_10_Izq
+    326. CT_Item_10_Der
+    327. CT_Item_11_Izq
+    328. CT_Item_11_Der
+    329. CT_Item_16_Izq
+    330. CT_Item_16_Der
+    331. CT_Item_19_Izq
+    332. CT_Item_19_Der
+    333. CT_Item_20_Izq
+    334. CT_Item_20_Der
+    335. CT_Item_22_Izq
+    336. CT_Item_22_Der
+    337. CT_Item_23_Izq
+    338. CT_Item_23_Der
+    339. CT_Item_24_Izq
+    340. CT_Item_24_Der
+    341. CT_Item_25_Izq
+    342. CT_Item_25_Der
+    343. CT_Item_27_Izq
+    344. CT_Item_27_Der
+    345. CT_Item_28_Izq
+    346. CT_Item_28_Der
+    347. CT_Item_29_Izq
+    348. CT_Item_29_Der
+    349. CT_Item_30_Izq
+    350. CT_Item_30_Der
+    351. CO_Pro
+    352. CO_Pro_Izq
+    353. CO_Pro_Der
+    354. CO_Con
+    355. CO_Con_Izq
+    356. CO_Con_Der
+    357. CT_Pro
+    358. CT_Pro_Izq
+    359. CT_Pro_Der
+    360. CT_Con
+    361. CT_Con_Izq
+    362. CT_Con_Der
+    363. CO_Congruentes_Promedio
+    364. CO_Incongruentes_Promedio
+    365. IP_Item_4_Respuesta_Original
+    366. IP_Item_4_Tiempo_Original
+    367. IP_Item_23_Respuesta_Original
+    368. IP_Item_23_Tiempo_Original
+    369. IP_Item_3_Respuesta_Original
+    370. IP_Item_3_Tiempo_Original
+    371. IP_Item_8_Respuesta_Original
+    372. IP_Item_8_Tiempo_Original
+    373. IP_Item_7_Respuesta_Original
+    374. IP_Item_7_Tiempo_Original
+    375. IP_Item_28_Respuesta_Original
+    376. IP_Item_28_Tiempo_Original
+    377. IP_Item_11_Respuesta_Original
+    378. IP_Item_11_Tiempo_Original
+    379. IP_Item_30_Respuesta_Original
+    380. IP_Item_30_Tiempo_Original
+    381. IP_Item_20_Respuesta_Original
+    382. IP_Item_20_Tiempo_Original
+    383. IP_Item_6_Respuesta_Original
+    384. IP_Item_6_Tiempo_Original
+    385. IP_Item_25_Respuesta_Original
+    386. IP_Item_25_Tiempo_Original
+    387. IP_Item_22_Respuesta_Original
+    388. IP_Item_22_Tiempo_Original
+    389. IP_Item_9_Respuesta_Original
+    390. IP_Item_9_Tiempo_Original
+    391. IP_Item_29_Respuesta_Original
+    392. IP_Item_29_Tiempo_Original
+    393. IP_Item_10_Respuesta_Original
+    394. IP_Item_10_Tiempo_Original
+    395. IP_Item_19_Respuesta_Original
+    396. IP_Item_19_Tiempo_Original
+    397. IP_Item_27_Respuesta_Original
+    398. IP_Item_27_Tiempo_Original
+    399. IP_Item_5_Respuesta_Original
+    400. IP_Item_5_Tiempo_Original
+    401. IP_Item_16_Respuesta_Original
+    402. IP_Item_16_Tiempo_Original
+    403. IP_Item_24_Respuesta_Original
+    404. IP_Item_24_Tiempo_Original
+    405. Genero_Agrupado
+    406. Inmueble_Agrupado
+    407. Fuente_Ingreso_Agrupada
+    408. Nivel_Educativo_Agrupado
+    409. Genero_femenino
+    410. Genero_género fluido
+    411. Genero_masculino
+    412. Genero_no binario
+    413. Genero_no me identifico con ninguno
+    414. Genero_sexo biológico femenino
+    415. Estrato_Social_alto
+    416. Estrato_Social_bajo
+    417. Estrato_Social_bajo medio
+    418. Estrato_Social_medio
+    419. Estrato_Social_medio alto
+    420. Nivel_Educativo_posgrado
+    421. Nivel_Educativo_primario
+    422. Nivel_Educativo_secundario
+    423. Nivel_Educativo_terciario
+    424. Nivel_Educativo_universitario
+    425. Fuente_Ingreso_agricultora
+    426. Fuente_Ingreso_ama de casa 
+    427. Fuente_Ingreso_autogestión 
+    428. Fuente_Ingreso_auxiliar educativo suplente 
+    429. Fuente_Ingreso_beca institucional
+    430. Fuente_Ingreso_cooperativa de trabajo
+    431. Fuente_Ingreso_desempleado
+    432. Fuente_Ingreso_discapacidad 
+    433. Fuente_Ingreso_emprendiendo 
+    434. Fuente_Ingreso_independiente
+    435. Fuente_Ingreso_inmobiliaria familiar
+    436. Fuente_Ingreso_jubilacion
+    437. Fuente_Ingreso_jubilación
+    438. Fuente_Ingreso_jubilación 
+    439. Fuente_Ingreso_jubilada docente
+    440. Fuente_Ingreso_jubilado
+    441. Fuente_Ingreso_me mantiene mi ex pareja porque soy estudiante y desempleada hace 9 meses.
+    442. Fuente_Ingreso_microemprendimiento 
+    443. Fuente_Ingreso_mini emprendimiento 
+    444. Fuente_Ingreso_monotributista autónomo 
+    445. Fuente_Ingreso_no tengo 
+    446. Fuente_Ingreso_omito
+    447. Fuente_Ingreso_pension
+    448. Fuente_Ingreso_pension no contributiva
+    449. Fuente_Ingreso_pensionada
+    450. Fuente_Ingreso_pensión
+    451. Fuente_Ingreso_pensión 
+    452. Fuente_Ingreso_pensión no contributiva 
+    453. Fuente_Ingreso_pensión por discapacidad 
+    454. Fuente_Ingreso_pensión, trabajo por mi cuenta y alquiler 
+    455. Fuente_Ingreso_plan social
+    456. Fuente_Ingreso_progrma social (suaf) y la cuota alimentaria
+    457. Fuente_Ingreso_renta
+    458. Fuente_Ingreso_retirada fuerza de seguridad
+    459. Fuente_Ingreso_soy ama de casa.
+    460. Fuente_Ingreso_sustento familiar
+    461. Fuente_Ingreso_tengo un emprendimiento 
+    462. Fuente_Ingreso_tiene una empresa
+    463. Fuente_Ingreso_trabajo
+    464. Fuente_Ingreso_trabajo independiente
+    465. Fuente_Ingreso_trabajo informal independiente 
+    466. Fuente_Ingreso_trabajo por mi cuenta en dos rubros 
+    467. Fuente_Ingreso_trabajo x hora
+    468. Fuente_Ingreso_trabajo y sustento familiar 
+    469. Inmueble_Residencia_abono crédito hipotecario 
+    470. Inmueble_Residencia_alquilo
+    471. Inmueble_Residencia_casa de familiar
+    472. Inmueble_Residencia_casa de mi pareja
+    473. Inmueble_Residencia_casa de mis padres
+    474. Inmueble_Residencia_casa de mis padres 
+    475. Inmueble_Residencia_casa familiar
+    476. Inmueble_Residencia_casa familiar propia
+    477. Inmueble_Residencia_casa paterna
+    478. Inmueble_Residencia_casa procrear
+    479. Inmueble_Residencia_cedido
+    480. Inmueble_Residencia_compartido con suegros
+    481. Inmueble_Residencia_comparto con familia 
+    482. Inmueble_Residencia_con mí madre
+    483. Inmueble_Residencia_crédito 
+    484. Inmueble_Residencia_crédito hipotecario
+    485. Inmueble_Residencia_crédito hipotecario 
+    486. Inmueble_Residencia_crédito hipotecario   
+    487. Inmueble_Residencia_de familia
+    488. Inmueble_Residencia_de mi pareja
+    489. Inmueble_Residencia_de mis padres
+    490. Inmueble_Residencia_en casa de familiar 
+    491. Inmueble_Residencia_en parte mío y en parte cedido, herencia
+    492. Inmueble_Residencia_en propiedad de familia de cónyuge 
+    493. Inmueble_Residencia_es propiedad de mi pareja
+    494. Inmueble_Residencia_familia, padres
+    495. Inmueble_Residencia_familiar
+    496. Inmueble_Residencia_heredado 
+    497. Inmueble_Residencia_hipoteca
+    498. Inmueble_Residencia_hipoteca 
+    499. Inmueble_Residencia_hipotecado
+    500. Inmueble_Residencia_hipotecado uva
+    501. Inmueble_Residencia_iprodha 
+    502. Inmueble_Residencia_la casa de mis padres 
+    503. Inmueble_Residencia_la propiedad es de mis padres 
+    504. Inmueble_Residencia_madre
+    505. Inmueble_Residencia_mi pareja
+    506. Inmueble_Residencia_pago un alquiler simbólico 
+    507. Inmueble_Residencia_prestado
+    508. Inmueble_Residencia_prestado convivo con familiar
+    509. Inmueble_Residencia_prestado por un familiar
+    510. Inmueble_Residencia_propio
+    511. Inmueble_Residencia_préstamo 
+    512. Inmueble_Residencia_tengo una deuda aun a pagar
+    513. Inmueble_Residencia_usurpado
+    514. Inmueble_Residencia_vivienda de padres
+    515. Inmueble_Residencia_vivo con mis padres 
+    516. Inmueble_Residencia_vivo con mí madre
+    517. Inmueble_Residencia_vivo en casa paterna
+    518. Inmueble_Residencia_vivo en la casa de mi madre
+    519. Voto_2019_Alberto Fernandez
+    520. Voto_2019_J. Gomez Centurión
+    521. Voto_2019_J.L. Espert
+    522. Voto_2019_Mauricio Macri
+    523. Voto_2019_Nicolás Del Caño
+    524. Voto_2019_Roberto Lavagna
+    525. Voto_2019_Voto en blanco
+    526. Voto_2019_no vote
+    527. Voto_2019_prefiero no decirlo
+    528. Voto_PASO_2023_no
+    529. Voto_PASO_2023_prefiero no decirlo
+    530. Voto_PASO_2023_si
+    531. Candidato_PASO_2023_Gabriel Solano
+    532. Candidato_PASO_2023_Guillermo Moreno
+    533. Candidato_PASO_2023_Horacio Rodriguez Larreta
+    534. Candidato_PASO_2023_Javier Milei
+    535. Candidato_PASO_2023_Juan Grabois
+    536. Candidato_PASO_2023_Juan Schiaretti
+    537. Candidato_PASO_2023_Manuela Castañeira
+    538. Candidato_PASO_2023_Myriam Bregman
+    539. Candidato_PASO_2023_Patricia Bullrich
+    540. Candidato_PASO_2023_Prefiero no decirlo
+    541. Candidato_PASO_2023_Sergio Massa
+    542. Candidato_PASO_2023_Voto en blanco
+    543. Candidato_PASO_2023_no aplica
+    544. Afiliacion_Politica_no
+    545. Afiliacion_Politica_si
+    546. Edad_Agrupada_Menos_25
+    547. Edad_Agrupada_Entre_25_Y_34
+    548. Edad_Agrupada_Entre_35_Y_44
+    549. Edad_Agrupada_Entre_45_Y_54
+    550. Edad_Agrupada_Mayor_55
+    551. Votara_2023_no
+    552. Votara_2023_no sabe
+    553. Votara_2023_si
+    554. Categoria_PASO_2023_No apply
+    555. Categoria_PASO_2023_No response
 

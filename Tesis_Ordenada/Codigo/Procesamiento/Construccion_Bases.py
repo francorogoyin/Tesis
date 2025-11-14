@@ -23,7 +23,12 @@ from Configuracion import (
     RUTA_DATA_CRUDOS,
     RUTA_DATA_PROCESADOS
 )
-from Funciones_Comunes import Procesar_Columna_Results
+from Funciones_Comunes import (
+    Procesar_Columna_Results,
+    Crear_Variables_De_Orden_IP_Items,
+    Crear_Variables_De_Orden_IP_Items_Asociados,
+    Crear_Primeros_IP_Items_Asociados
+)
 
 
 # ============================================================
@@ -509,13 +514,65 @@ def Combinar_Archivos_Ballotage() -> pd.DataFrame:
 # FUNCIONES DE PROCESAMIENTO
 # ============================================================
 
+def Extraer_Columnas_Orden(
+    Df_Crudo: pd.DataFrame
+) -> pd.DataFrame:
+
+    """
+    Extrae columnas de orden de items IP (sin asociar y
+    asociados) antes de procesar la columna results.
+
+    Parámetros:
+    - Df_Crudo: DataFrame crudo con columnas 'id' y 'results'.
+
+    Retorna:
+    - DataFrame con columnas de orden de items.
+
+    """
+
+    # Filtrar solo columnas necesarias.
+    Df_Orden = Df_Crudo[['id', 'results']].copy()
+
+    # Eliminar filas con results vacíos.
+    Df_Orden = Df_Orden[Df_Orden['results'].notna()].reset_index(
+        drop=True
+    )
+
+    # Crear variables de orden de items sin asociar.
+    Df_Orden = Crear_Variables_De_Orden_IP_Items(Df_Orden)
+
+    # Crear variables de orden de items asociados.
+    Df_Orden = Crear_Variables_De_Orden_IP_Items_Asociados(Df_Orden)
+
+    # Crear primeros 3 items asociados.
+    Df_Orden = Crear_Primeros_IP_Items_Asociados(Df_Orden, 3)
+
+    # Quedarnos solo con columnas relevantes.
+    Columnas_Orden = [
+        'id',
+        'Orden_IP_Items',
+        'Ultimo_IP_Item',
+        'Orden_IP_Items_Asociados',
+        'Primeros_IP_Items_Asociados',
+        'Ultimo_IP_Item_Asociado'
+    ]
+
+    Df_Orden = Df_Orden[Columnas_Orden]
+
+    # Renombrar 'id' a 'ID' para merge posterior.
+    Df_Orden.rename(columns={'id': 'ID'}, inplace=True)
+
+    return Df_Orden
+
+
 def Procesar_Base_Completa(
     Df_Crudo: pd.DataFrame
 ) -> pd.DataFrame:
 
     """
     Procesa la base cruda extrayendo y aplanando la columna
-    'results' en formato JSON, y renombra las columnas.
+    'results' en formato JSON, renombra las columnas, y
+    recupera las columnas de orden de items.
 
     Parámetros:
     - Df_Crudo: DataFrame crudo con columna 'results'.
@@ -526,6 +583,12 @@ def Procesar_Base_Completa(
 
     """
 
+    # Extraer columnas de orden antes de procesar.
+    print("\nExtrayendo columnas de orden de items...")
+    Df_Orden = Extraer_Columnas_Orden(Df_Crudo)
+    print(f"✓ Columnas de orden extraídas: {len(Df_Orden.columns)}")
+
+    # Procesar columna results.
     print("\nProcesando columna 'results'...")
     Df_Procesado = Procesar_Columna_Results(Df_Crudo)
     print(f"✓ Filas procesadas: {len(Df_Procesado)}")
@@ -541,7 +604,72 @@ def Procesar_Base_Completa(
     Df_Procesado = Df_Procesado.rename(columns=Mapeo_Filtrado)
     print(f"✓ {len(Mapeo_Filtrado)} columnas renombradas")
 
-    return Df_Procesado
+    # Convertir ID a int.
+    if 'ID' in Df_Procesado.columns:
+        Df_Procesado['ID'] = Df_Procesado['ID'].astype(int)
+
+    # Hacer merge para recuperar columnas de orden.
+    print("\nRecuperando columnas de orden...")
+    Df_Final = pd.merge(
+        Df_Procesado,
+        Df_Orden,
+        on='ID',
+        how='left'
+    )
+    print(f"✓ Merge completado. Total columnas: {len(Df_Final.columns)}")
+
+    # Crear columna de categorías de candidatos.
+    print("\nCreando categorías de candidatos...")
+    Df_Final = Crear_Categoria_Candidatos(Df_Final)
+    print("✓ Columna 'Categoria_PASO_2023' creada")
+
+    return Df_Final
+
+
+def Crear_Categoria_Candidatos(
+    Df: pd.DataFrame
+) -> pd.DataFrame:
+
+    """
+    Crea la columna 'Categoria_PASO_2023' mapeando candidatos
+    a categorías ideológicas.
+
+    Parámetros:
+    - Df: DataFrame con columna 'Candidato_PASO_2023'.
+
+    Retorna:
+    - DataFrame con columna 'Categoria_PASO_2023' agregada.
+
+    """
+
+    # Diccionario de mapeo candidato → categoría.
+    Candidatos_Mapeo = {
+        'Sergio Massa': 'Progressivism',
+        'Juan Grabois': 'Progressivism',
+        'Guillermo Moreno': 'Progressivism',
+        'no aplica': 'No apply',
+        'Myriam Bregman': 'Left_Wing',
+        'Gabriel Solano': 'Left_Wing',
+        'Manuela Castañeira': 'Left_Wing',
+        'Patricia Bullrich': 'Moderate_Right_B',
+        'Horacio Rodriguez Larreta': 'Moderate_Right_A',
+        'Juan Schiaretti': 'Centre',
+        'Javier Milei': 'Right_Wing_Libertarian',
+        'Prefiero no decirlo': 'No response',
+        'Voto en blanco': 'Blank'
+    }
+
+    if 'Candidato_PASO_2023' in Df.columns:
+        Df['Categoria_PASO_2023'] = Df['Candidato_PASO_2023'].map(
+            Candidatos_Mapeo
+        ).fillna('Other')
+    else:
+        print(
+            "⚠️ Columna 'Candidato_PASO_2023' no encontrada. "
+            "No se pudo crear 'Categoria_PASO_2023'."
+        )
+
+    return Df
 
 
 # ============================================================

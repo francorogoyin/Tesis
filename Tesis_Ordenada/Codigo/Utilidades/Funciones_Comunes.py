@@ -203,10 +203,14 @@ def Aplanar_Diccionario(
                 Aplanar_Diccionario(Valor, Nueva_Clave)
             )
         elif isinstance(Valor, list):
-            # Convertir listas a strings separados por comas.
-            Diccionario_Plano[Nueva_Clave] = ', '.join(
-                map(str, Valor)
-            )
+            # Si la lista tiene un solo elemento, extraerlo.
+            if len(Valor) == 1:
+                Diccionario_Plano[Nueva_Clave] = Valor[0]
+            else:
+                # Convertir listas a strings separados por comas.
+                Diccionario_Plano[Nueva_Clave] = ', '.join(
+                    map(str, Valor)
+                )
         else:
             Diccionario_Plano[Nueva_Clave] = Valor
 

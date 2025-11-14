@@ -25,6 +25,10 @@ RUTA_DATA = RUTA_BASE / "Data"
 RUTA_DATA_CRUDOS = RUTA_DATA / "Datos_Crudos"
 RUTA_DATA_PROCESADOS = RUTA_DATA / "Datos_Procesados"
 
+# Rutas específicas de datos crudos por elección.
+RUTA_DATOS_CRUDOS_GENERALES = RUTA_DATA_CRUDOS / "Generales"
+RUTA_DATOS_CRUDOS_BALLOTAGE = RUTA_DATA_CRUDOS / "Ballotage"
+
 # Rutas de salida de gráficos.
 RUTA_GRAFICOS = RUTA_BASE / "Graficos"
 RUTA_GRAFICOS_CLEVELAND = RUTA_GRAFICOS / "Cleveland"
@@ -92,10 +96,7 @@ CATEGORIAS_DERECHA = [
 
 # Categorías a excluir de análisis.
 CATEGORIAS_EXCLUIR = [
-    'No apply',
-    'No response',
-    'Other',
-    'Blank'
+    'Other'
 ]
 
 

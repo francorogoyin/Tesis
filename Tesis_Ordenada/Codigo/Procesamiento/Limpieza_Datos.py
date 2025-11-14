@@ -45,9 +45,6 @@ def Filtrar_Categorias_Invalidas(
 
     Las categorías excluidas típicamente incluyen:
     - 'Other': Participantes sin categoría ideológica clara.
-    - 'No apply': Sin información ideológica.
-    - 'No response': Sin respuesta a clasificación.
-    - 'Blank': Respuestas en blanco.
 
     Parámetros:
     - Df: DataFrame a filtrar.

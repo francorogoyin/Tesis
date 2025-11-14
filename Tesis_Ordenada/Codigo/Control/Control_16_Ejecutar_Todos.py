@@ -20,6 +20,20 @@ from reportlab.platypus import (
 )
 from reportlab.lib import colors
 import sys
+import io
+
+# Configurar codificación UTF-8 para Windows.
+if sys.platform == 'win32':
+    sys.stdout = io.TextIOWrapper(
+        sys.stdout.buffer,
+        encoding='utf-8',
+        errors='replace'
+    )
+    sys.stderr = io.TextIOWrapper(
+        sys.stderr.buffer,
+        encoding='utf-8',
+        errors='replace'
+    )
 
 # Agregar rutas.
 Ruta_Actual = Path(__file__).parent
@@ -69,9 +83,14 @@ RUTA_REPORTES = (
     Path(__file__).parent.parent.parent / "Reportes" / "Control"
 )
 
-RUTA_BASES_DEFINITIVAS = (
-    Path(__file__).parent.parent.parent / "Data" /
+RUTA_BASES_ORIGINALES = (
+    Path(__file__).parent.parent.parent.parent / "Data" /
     "Bases definitivas"
+)
+
+RUTA_BASES_NUEVAS = (
+    Path(__file__).parent.parent.parent / "Tablas" /
+    "Bases_Procesadas"
 )
 
 
@@ -82,21 +101,21 @@ RUTA_BASES_DEFINITIVAS = (
 def Cargar_Bases() -> Dict[str, pd.DataFrame]:
 
     """
-    Carga las bases finales de Generales y Ballotage.
+    Carga las bases nuevas generadas por el pipeline.
 
     """
 
     print("\n" + "="*70)
-    print("CARGANDO BASES DE DATOS")
+    print("CARGANDO BASES DE DATOS NUEVAS")
     print("="*70)
 
     Bases = {}
 
     Archivo_Generales = (
-        RUTA_BASES_DEFINITIVAS / "Bases finalesGenerales.xlsx"
+        RUTA_BASES_NUEVAS / "Base_Final_Generales.xlsx"
     )
     Archivo_Ballotage = (
-        RUTA_BASES_DEFINITIVAS / "Bases finalesBallotage.xlsx"
+        RUTA_BASES_NUEVAS / "Base_Final_Ballotage.xlsx"
     )
 
     if Archivo_Generales.exists():

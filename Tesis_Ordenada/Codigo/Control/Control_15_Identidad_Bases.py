@@ -44,11 +44,11 @@ RUTA_PROYECTO_ORDENADO = (
 
 ARCHIVOS_COMPARACION = {
     'Generales': {
-        'original': 'Bases finalesGenerales.xlsx',
+        'original': 'Generales.xlsx',
         'ordenado': 'Base_Final_Generales.xlsx'
     },
     'Ballotage': {
-        'original': 'Bases finalesBallotage.xlsx',
+        'original': 'Ballotage.xlsx',
         'ordenado': 'Base_Final_Ballotage.xlsx'
     }
 }

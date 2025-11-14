@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(timeout 60 venv/Scripts/python:*)",
+      "Bash(venv/Scripts/python:*)",
+      "Bash(find:*)",
+      "Bash(python:*)",
+      "Bash(rm:*)",
+      "Bash(cat:*)",
+      "Bash(pipeline_test_tiempos.txt)",
+      "Bash(dir C:UsersPatricioDocumentsCodigoPythonInvestigacionTesisCódigoControles 2)",
+      "Bash(nul)",
+      "Bash(findstr:*)",
+      "Bash(dir:*)",
+      "Bash(python3:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
