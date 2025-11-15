@@ -1,0 +1,3 @@
+1. Revisar la falla que sale en el archivo de Control 1_2 relacionada a los tiempos de respuesta.
+2. Pedir que el control verifique si las filas eliminadas son las mismas que en el original.
+3. Seguir con pasos siguientes.
