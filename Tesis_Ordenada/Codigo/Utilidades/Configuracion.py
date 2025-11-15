@@ -53,11 +53,11 @@ NUMEROS_ITEMS_IP = [
     19, 20, 22, 23, 24, 25, 27, 28, 29, 30
 ]
 
-# Items progresistas.
-ITEMS_PROGRESISTAS = [3, 4, 5, 6, 7, 9, 10, 16, 22, 24]
+# Items progresistas (clasificación del notebook original).
+ITEMS_PROGRESISTAS = [5, 6, 9, 11, 16, 20, 24, 25, 27, 28]
 
-# Items conservadores.
-ITEMS_CONSERVADORES = [8, 11, 19, 20, 23, 25, 27, 28, 29, 30]
+# Items conservadores (clasificación del notebook original).
+ITEMS_CONSERVADORES = [3, 4, 7, 8, 10, 19, 22, 23, 29, 30]
 
 
 # ============================================================
@@ -168,184 +168,188 @@ SUFIJO_DER = '_Der'
 DICCIONARIO_ITEMS_IP = {
     3: {
         'Numero_Item': 3,
-        'Titulo': 'Aborto legal y seguro',
-        'Tipo': 'Progresista',
+        'Titulo': 'Aborto como crimen',
+        'Tipo': 'Conservador',
         'Texto': (
-            'El aborto legal, seguro y gratuito es un '
-            'derecho fundamental de las mujeres.'
+            'El aborto es un crimen y debe ser perseguido y '
+            'penado por la justicia en todas las circunstancias.'
         )
     },
     4: {
         'Numero_Item': 4,
-        'Titulo': 'Matrimonio igualitario',
-        'Tipo': 'Progresista',
+        'Titulo': 'Homosexuales en educación',
+        'Tipo': 'Conservador',
         'Texto': (
-            'El matrimonio entre personas del mismo '
-            'sexo debe ser reconocido legalmente.'
+            'La ley no debería permitir a personas homosexuales '
+            'dar clases en las escuelas.'
         )
     },
     5: {
         'Numero_Item': 5,
-        'Titulo': 'Educación sexual integral',
+        'Titulo': 'Consultas populares vinculantes',
         'Tipo': 'Progresista',
         'Texto': (
-            'La educación sexual integral debe '
-            'implementarse en todas las escuelas.'
+            'El Estado debería hacer consultas populares vinculantes '
+            'antes de tomar grandes decisiones para el destino del país.'
         )
     },
     6: {
         'Numero_Item': 6,
-        'Titulo': 'Impuesto a las grandes fortunas',
+        'Titulo': 'Sistema público de jubilaciones',
         'Tipo': 'Progresista',
         'Texto': (
-            'Debe existir un impuesto especial a '
-            'las grandes fortunas y patrimonios.'
+            'El Estado debería preservar el sistema de fondos de '
+            'pensiones (jubilaciones) como un sistema eminentemente público.'
         )
     },
     7: {
         'Numero_Item': 7,
-        'Titulo': 'Intervención estatal en economía',
-        'Tipo': 'Progresista',
+        'Titulo': 'Gobierno militar vs democrático',
+        'Tipo': 'Conservador',
         'Texto': (
-            'El Estado debe intervenir activamente '
-            'en la economía para garantizar justicia '
-            'social.'
+            'A veces un gobierno militar puede ser preferible '
+            'a uno democrático.'
         )
     },
     8: {
         'Numero_Item': 8,
-        'Titulo': 'Mano dura contra delincuencia',
+        'Titulo': 'Educación sexual sólo por padres',
         'Tipo': 'Conservador',
         'Texto': (
-            'La seguridad requiere mano dura '
-            'contra la delincuencia.'
+            'Sólo los padres tienen derecho a enseñar a sus hijos temas '
+            'relacionados con la sexualidad; el colegio no debería intervenir '
+            'en estas cuestiones.'
         )
     },
     9: {
         'Numero_Item': 9,
-        'Titulo': 'Protección de minorías',
+        'Titulo': 'Servicios públicos esenciales estatales',
         'Tipo': 'Progresista',
         'Texto': (
-            'Es necesario implementar políticas '
-            'de protección de minorías.'
+            'Los servicios públicos esenciales (agua, luz, gas) deberían '
+            'ser propiedad del Estado.'
         )
     },
     10: {
         'Numero_Item': 10,
-        'Titulo': 'Cambio climático urgente',
-        'Tipo': 'Progresista',
+        'Titulo': 'Más policías vs otras áreas',
+        'Tipo': 'Conservador',
         'Texto': (
-            'El cambio climático requiere '
-            'acción inmediata del gobierno.'
+            'El Estado debería asegurar más policías en la calle para el '
+            'control del crimen y la delincuencia, aún si para ello fuera '
+            'necesario recortar el presupuesto de otras áreas importantes '
+            'como trabajo, salud y educación.'
         )
     },
     11: {
         'Numero_Item': 11,
-        'Titulo': 'Valores tradicionales familiares',
-        'Tipo': 'Conservador',
+        'Titulo': 'Campañas consumo responsable marihuana',
+        'Tipo': 'Progresista',
         'Texto': (
-            'Los valores tradicionales de la '
-            'familia deben ser preservados.'
+            'El Estado debería promover campañas de concientización '
+            'sobre el consumo responsable de sustancias como la marihuana.'
         )
     },
     16: {
         'Numero_Item': 16,
-        'Titulo': 'Legalización de drogas blandas',
+        'Titulo': 'Tierras a comunidades indígenas',
         'Tipo': 'Progresista',
         'Texto': (
-            'Debería legalizarse el consumo '
-            'de marihuana.'
+            'El Estado debería otorgarle tierras a las comunidades indígenas '
+            'que habitan en el país para que puedan autogobernarse.'
         )
     },
     19: {
         'Numero_Item': 19,
-        'Titulo': 'Libre mercado sin regulación',
+        'Titulo': 'Educación sexual es peligrosa',
         'Tipo': 'Conservador',
         'Texto': (
-            'El libre mercado debe funcionar '
-            'sin regulación estatal.'
+            'La educación sexual en jóvenes es peligrosa porque los motiva '
+            'a una iniciación sexual temprana.'
         )
     },
     20: {
         'Numero_Item': 20,
-        'Titulo': 'Reducción del gasto público',
-        'Tipo': 'Conservador',
+        'Titulo': 'Ingreso mínimo para niños',
+        'Tipo': 'Progresista',
         'Texto': (
-            'Es necesario reducir drásticamente '
-            'el gasto público.'
+            'El Estado debería garantizar un ingreso mínimo a todos los niños '
+            'sin importar la situación laboral de sus padres.'
         )
     },
     22: {
         'Numero_Item': 22,
-        'Titulo': 'Redistribución de la riqueza',
-        'Tipo': 'Progresista',
+        'Titulo': 'Estado sostiene a Iglesia Católica',
+        'Tipo': 'Conservador',
         'Texto': (
-            'La redistribución de la riqueza '
-            'es esencial para la justicia.'
+            'Está bien que el Estado sostenga económicamente '
+            'a la Iglesia Católica.'
         )
     },
     23: {
         'Numero_Item': 23,
-        'Titulo': 'Autoridad y orden',
+        'Titulo': 'Límites a inmigración por crisis',
         'Tipo': 'Conservador',
         'Texto': (
-            'La autoridad y el orden deben '
-            'prevalecer sobre las libertades '
-            'individuales.'
+            'Ante la crisis económica, nuestro país debería ser menos permisivo '
+            'con el ingreso de inmigrantes que compiten con los ciudadanos '
+            'locales en la búsqueda de trabajo y mejores condiciones de vida.'
         )
     },
     24: {
         'Numero_Item': 24,
-        'Titulo': 'Derechos LGBTQ+',
+        'Titulo': 'Piquetes y cortes de ruta',
         'Tipo': 'Progresista',
         'Texto': (
-            'Los derechos de las personas LGBTQ+ '
-            'deben ser ampliamente protegidos.'
+            'Está bien que desocupados y vecinos realicen piquetes y cortes '
+            'de calles o rutas, ya que es la única manera que tienen para '
+            'presionar y lograr que sus reclamos sean atendidos por los gobiernos.'
         )
     },
     25: {
         'Numero_Item': 25,
-        'Titulo': 'Privatización de empresas',
-        'Tipo': 'Conservador',
+        'Titulo': 'Evitar concentración de medios',
+        'Tipo': 'Progresista',
         'Texto': (
-            'Las empresas estatales deberían '
-            'privatizarse.'
+            'El Estado debería hacer lo posible por evitar la concentración '
+            'de medios de comunicación en pocas manos, y asegurar así la '
+            'pluralidad de expresión.'
         )
     },
     27: {
         'Numero_Item': 27,
-        'Titulo': 'Religión en educación',
-        'Tipo': 'Conservador',
+        'Titulo': 'Gasto en asistencia social',
+        'Tipo': 'Progresista',
         'Texto': (
-            'La religión debe tener un lugar '
-            'en la educación pública.'
+            'Cuando hay crisis económica, el Estado debería aumentar el gasto '
+            'en programas de asistencia social y subsidios (como el programa '
+            'nacional "jefas y jefes de hogar").'
         )
     },
     28: {
         'Numero_Item': 28,
-        'Titulo': 'Límites a inmigración',
-        'Tipo': 'Conservador',
+        'Titulo': 'Propiedad de quien trabaja tierra',
+        'Tipo': 'Progresista',
         'Texto': (
-            'Debe limitarse la inmigración '
-            'para proteger los empleos nacionales.'
+            'La propiedad de la tierra debe ser de quien la trabaje.'
         )
     },
     29: {
         'Numero_Item': 29,
-        'Titulo': 'Portación de armas',
+        'Titulo': 'Privatización de empresas públicas',
         'Tipo': 'Conservador',
         'Texto': (
-            'Los ciudadanos deberían tener '
-            'derecho a portar armas.'
+            'El Estado debería privatizar todas las empresas '
+            'públicas ineficientes.'
         )
     },
     30: {
         'Numero_Item': 30,
-        'Titulo': 'Pena de muerte',
+        'Titulo': 'Medios estatales sin propaganda',
         'Tipo': 'Conservador',
         'Texto': (
-            'La pena de muerte debería aplicarse '
-            'en casos extremos.'
+            'No deberían utilizarse los medios de comunicación estatal '
+            'para publicidad oficial o propaganda gubernamental.'
         )
     }
 }
