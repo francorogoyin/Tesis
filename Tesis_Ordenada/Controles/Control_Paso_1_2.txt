@@ -1,0 +1,138 @@
+================================================================================
+REPORTE DE CONTROL - PASO 1.2: LIMPIEZA Y RELLENO DE DATOS
+================================================================================
+Fecha: 2025-11-15 18:33:38
+Archivos controlados:
+  - Codigo/Utilidades/Configuracion.py
+  - Codigo/Procesamiento/Limpieza_Datos.py
+  - Codigo/Procesamiento/Relleno_Medianas.py
+
+================================================================================
+CONTROL 1: CLASIFICACIÓN DE ITEMS IP
+================================================================================
+
+QUÉ SE CONTROLÓ:
+  - Que la clasificación de items progresistas/conservadores coincida
+    con la del Notebook 5 original (fuente de verdad)
+  - Que no haya solapamiento entre categorías
+  - Que se cubran los 20 items totales
+
+CÓMO SE CONTROLÓ:
+  - Comparación directa de listas de Configuracion.py
+  - Verificación de sets para detectar solapamiento
+
+CLASIFICACIÓN ESPERADA (Notebook 5):
+  Progresistas: [5, 6, 9, 11, 16, 20, 24, 25, 27, 28]
+  Conservadores: [3, 4, 7, 8, 10, 19, 22, 23, 29, 30]
+
+CLASIFICACIÓN ACTUAL (Configuracion.py):
+  Progresistas: [5, 6, 9, 11, 16, 20, 24, 25, 27, 28]
+  Conservadores: [3, 4, 7, 8, 10, 19, 22, 23, 29, 30]
+
+RESULTADOS:
+  Progresistas coinciden: SI
+  Conservadores coinciden: SI
+  Solapamiento: 0 items (esperado: 0)
+  Total items: 20 (esperado: 20)
+
+CRITERIO DE ÉXITO: Clasificación idéntica al Notebook 5
+RESULTADO: EXITOSO
+
+================================================================================
+CONTROL 2: FILTRO POR CATEGORÍA INVÁLIDA
+================================================================================
+
+QUÉ SE CONTROLÓ:
+  - Función Filtrar_Categorias_Invalidas elimina filas con
+    categorías en CATEGORIAS_EXCLUIR
+
+CÓMO SE CONTROLÓ:
+  - DataFrame de prueba con 6 filas, categorías mixtas
+  - Verificar conteo antes/después del filtro
+
+CATEGORÍAS A EXCLUIR: ['Other']
+
+DATOS DE PRUEBA (6 filas):
+  Left_Wing: 1 filas
+  Progressivism: 1 filas
+  Other: 2 filas <-- EXCLUIR
+  Centre: 1 filas
+  Moderate_Right_A: 1 filas
+
+RESULTADOS:
+  Filas eliminadas: 2
+  Filas restantes: 4
+  Categorías excluidas restantes: 0
+
+CRITERIO DE ÉXITO: 0 filas con categorías excluidas
+RESULTADO: EXITOSO
+
+================================================================================
+CONTROL 3: FILTRO POR OUTLIERS DE TIEMPO
+================================================================================
+
+QUÉ SE CONTROLÓ:
+  - Función Filtrar_Outliers_Por_Tiempo elimina filas con tiempos
+    que excedan 3 desviaciones estándar
+
+CÓMO SE CONTROLÓ:
+  - DataFrame con outliers extremos intencionales (>1000)
+  - Verificar que outliers se eliminan
+
+DATOS DE PRUEBA (5 filas):
+  IP_Item_3_Tiempo:
+    Fila 1: 10.5
+    Fila 2: 15.2
+    Fila 3: 5000.0 <-- OUTLIER EXTREMO
+    Fila 4: 20.1
+    Fila 5: 12.8
+
+RESULTADOS:
+  Filas eliminadas: 0
+  Filas restantes: 5
+  Tiempo máximo restante: 5000.0
+
+CRITERIO DE ÉXITO: Outliers extremos eliminados
+RESULTADO: FALLIDO
+
+================================================================================
+CONTROL 4: RELLENO DE MEDIANAS POR CATEGORÍA
+================================================================================
+
+QUÉ SE CONTROLÓ:
+  - Rellenar_Medianas_IP_No_Asociados rellena NaN con mediana
+    del grupo ideológico
+
+CÓMO SE CONTROLÓ:
+  - DataFrame con NaN en diferentes categorías
+  - Verificar reducción de NaN y valores correctos
+
+DATOS DE PRUEBA (6 filas):
+  NaN en IP_Item_5_Respuesta: 3
+  Por categoría:
+    Left_Wing: ['3.0', 'NaN']
+    Progressivism: ['4.0', 'NaN']
+    Centre: ['2.0', 'NaN']
+
+RESULTADOS:
+  NaN después del relleno: 0
+  NaN rellenados: 3
+  Valores finales por categoría:
+    Left_Wing: ['3.0', '3.0']
+    Progressivism: ['4.0', '4.0']
+    Centre: ['2.0', '2.0']
+
+CRITERIO DE ÉXITO: NaN reducidos o eliminados
+RESULTADO: EXITOSO
+
+================================================================================
+RESUMEN GENERAL
+================================================================================
+
+Controles exitosos: 3/4
+Tasa de éxito: 75%
+
+CONCLUSIÓN: SE ENCONTRARON PROBLEMAS
+Revisar controles fallidos arriba.
+
+================================================================================

@@ -49,12 +49,40 @@ Si el código existente NO es suficiente, necesario o satisfactorio:
 - **Eliminar:** Quitar código redundante o innecesario
 - **Refactorizar:** Mejorar eficiencia manteniendo exactitud de resultados
 
-### Paso 6: Validación
+### Paso 6: Control Simple y Ejecución Aislada
+**CRÍTICO:** Antes de validar contra notebooks, hacer un control simple del paso actual:
+- **Control de Integridad:**
+  - Verificar que las funciones existen y son importables
+  - Verificar que las constantes/configuración están correctas
+  - Verificar tipos de datos y estructuras esperadas
+- **Ejecución Aislada:**
+  - Ejecutar SOLO el código migrado de este paso (no todo el pipeline)
+  - Usar datos de prueba o cargar un pequeño subset si es necesario
+  - Verificar que no hay errores de ejecución
+  - Inspeccionar outputs intermedios (primeras filas, estadísticos básicos)
+- **Criterios de Éxito Mínimos:**
+  - El código ejecuta sin errores
+  - Los tipos de datos de salida son correctos
+  - Las dimensiones/shapes son razonables
+  - No hay valores absurdos o fuera de rango
+- **Documentación del Control:**
+  - El control puede estar al final del mismo archivo Python (sección `if __name__ == "__main__"`)
+  - Generar un reporte DESCRIPTIVO (TXT) en carpeta `Controles/`
+  - NO crear archivos .py separados solo para controles
+  - **El reporte debe incluir:**
+    - Qué se controló específicamente (no solo "OK")
+    - Cómo se controló (método, criterios)
+    - Ejemplos concretos de datos verificados
+    - Resultados numéricos específicos (antes/después, valores, dimensiones)
+    - Criterios de éxito claros y si se cumplieron
+    - Cualquier observación o advertencia relevante
+
+### Paso 7: Validación Completa
 - Ejecutar código migrado y comparar resultados con notebooks originales
 - Verificar que los outputs sean IDÉNTICOS
 - Documentar cualquier diferencia encontrada y resolverla
 
-### Paso 7: Actualización de Documentación
+### Paso 8: Actualización de Documentación
 - Marcar checkbox de la etapa como completada en CLAUDE.md
 - Actualizar sección de "Documentación de Progreso por Sesión"
 - Documentar cualquier hallazgo o decisión importante
