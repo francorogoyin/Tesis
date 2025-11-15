@@ -81,11 +81,11 @@ def Ejecutar_Pipeline_Completo(
 
     Pipeline de 11 pasos:
     1. Construcción de bases desde CSVs crudos.
-    2. Cálculo de índices (Positividad, Progresismo,
+    2. Limpieza de datos y eliminación de outliers.
+    3. Relleno de medianas por categoría ideológica.
+    4. Cálculo de índices (Positividad, Progresismo,
        Conservadurismo).
-    3. Cálculo de variables CO y CT.
-    4. Limpieza de datos y eliminación de outliers.
-    5. Relleno de medianas por categoría ideológica.
+    5. Cálculo de variables CO y CT.
     6. Procesamiento de redes sociales y medios.
     7. Agrupamiento de variables sociodemográficas.
     8. Creación de variables dummy.
@@ -148,24 +148,40 @@ def Ejecutar_Pipeline_Completo(
         Guardar_Intermedios_Paso(Diccionario_Dfs, "01_Construccion")
 
     # ========================================================
-    # PASO 2: CÁLCULO DE ÍNDICES
+    # PASO 2: LIMPIEZA DE DATOS
     # ========================================================
 
     print("\n" + "="*70)
-    print("PASO 2/11: CÁLCULO DE ÍNDICES IDEOLÓGICOS")
+    print("PASO 2/11: LIMPIEZA DE DATOS Y OUTLIERS")
     print("="*70)
 
     if Verbose:
-        print("\nCalculando índices de Progresismo, "
-              "Conservadurismo y Positividad...")
+        print("\nFiltrando categorías inválidas y outliers "
+              "de tiempo...")
 
+    # Guardar tamaños pre-limpieza.
+    Tamaños_Pre = {
+        Nombre: len(Df) for Nombre, Df in Diccionario_Dfs.items()
+    }
+
+    Diccionario_Dfs = Limpiar_Diccionario_Dataframes(
+        Diccionario_Dfs,
+        Filtrar_Categorias=True,
+        Filtrar_Tiempos=True,
+        Numero_Desviaciones=3
+    )
+
+    print("\n✓ Datos limpios:")
     for Nombre, Df in Diccionario_Dfs.items():
-        Diccionario_Dfs[Nombre] = Calcular_Todos_Indices(Df)
-
-    print("\n✓ Índices calculados (5 columnas agregadas)")
+        Eliminados = Tamaños_Pre[Nombre] - len(Df)
+        Porcentaje = (Eliminados / Tamaños_Pre[Nombre]) * 100
+        print(
+            f"  {Nombre}: {len(Df)} casos "
+            f"({Eliminados} eliminados, {Porcentaje:.1f}%)"
+        )
 
     if Guardar_Intermedios:
-        Guardar_Intermedios_Paso(Diccionario_Dfs, "02_Indices")
+        Guardar_Intermedios_Paso(Diccionario_Dfs, "02_Limpieza")
 
     # ========================================================
     # PASO 3: CÁLCULO DE VARIABLES CO Y CT
